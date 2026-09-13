@@ -89,3 +89,23 @@ test('benefit numbers are finite numeric data, not formatted strings',()=>{
 test('reader-facing Japanese does not expose internal evidence codes',()=>{
  for(const p of programs)for(const key of ['conditions','apply','documents','caution'])assert.ok(!/[KNSUX](?:[、。\n]|$)/.test(p[key].ja),p.id+' '+key);
 });
+
+// Publication wiring does not change eligibility or send input values.
+import {correctionFormURL,policies} from '../src/ui-text.js';
+test('dedicated correction form is the approved fixed URL',()=>{
+ assert.equal(correctionFormURL,'https://docs.google.com/forms/d/e/1FAIpQLSc1ik61v7easSzsP3jZt4GLsZGTLg-LXoKegsiDcizOka7LtA/viewform?usp=publish-editor');
+ assert.deepEqual([...new URL(correctionFormURL).searchParams.keys()],['usp']);
+});
+test('correction and privacy explain external form without individual consultation',()=>{
+ for(const lang of ['ja','en']){assert.ok(policies.privacy[lang].text.join(' ').includes('Google'));assert.ok(policies.corrections[lang].text.join(' ').includes('Google'));}
+ assert.match(policies.corrections.ja.text.join(' '),/個別の受給資格・申請方法・個人事情/);
+ assert.match(policies.corrections.en.text.join(' '),/individual eligibility, application procedures or personal circumstances/);
+});
+test('published canonical, sitemap and robots share one real target',()=>{
+ const base='https://yhayashi-dev.github.io/tokyo-support-finder/';
+ const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
+ assert.ok(html.includes('rel="canonical" href="'+base+'"'));
+ assert.ok(html.includes('property="og:url" content="'+base+'"'));
+ assert.ok(readFileSync(new URL('../sitemap.xml',import.meta.url),'utf8').includes('<loc>'+base+'</loc>'));
+ assert.ok(readFileSync(new URL('../robots.txt',import.meta.url),'utf8').includes(base+'sitemap.xml'));
+});

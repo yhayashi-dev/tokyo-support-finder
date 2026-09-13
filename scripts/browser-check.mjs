@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import {correctionFormURL} from '../src/ui-text.js';
 import {createServer} from 'node:http';
 import {readFileSync,existsSync,mkdirSync} from 'node:fs';
 import {resolve,dirname,extname} from 'node:path';
@@ -77,10 +78,10 @@ try{
  for(const name of ['about','privacy','disclaimer','corrections']){
   await page.locator('[data-page="'+name+'"]').click();
   assert.ok((await page.locator('#dialog-body').innerText()).length>150);
-  if(name==='corrections'){assert.equal(await page.locator('#dialog-body a').count(),0);assert.ok((await page.locator('#dialog-body').innerText()).includes('No contact URL'));}
+  if(name==='corrections'){assert.equal(await page.locator('#dialog-body a').count(),1);assert.equal(await page.locator('#dialog-body a').getAttribute('href'),correctionFormURL);assert.ok((await page.locator('#dialog-body').innerText()).includes('No sign-in is required'));}
   await page.keyboard.press('Escape');
  }
- pass('policy, disclaimer and unconfigured correction guidance');
+ pass('policy, disclaimer and dedicated correction form guidance');
  assert.equal(requests.length,initialRequests);assert.ok(requests.every(r=>r.url.startsWith(base)&&r.method==='GET'&&!r.body));
  assert.equal(await page.evaluate(()=>localStorage.length+sessionStorage.length),0);
  assert.equal((await context.cookies()).length,0);

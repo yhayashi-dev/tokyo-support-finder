@@ -27,10 +27,10 @@ data/programs.jsonに12制度。publicationをpublished/heldに分離し、終�
 K＝確認済み、N＝公式に制限なしと確認、S＝確認範囲で記載なし、U＝未確認、X＝非該当。nullは必ず状態とセットで扱います。S/Uを条件なし・対象・無料・無期限へ変換しません。
 日英は同じ制度ID・数値・日付・公式URL・判定を使用。翻訳本文でルール判定しません。各データのassessmentは確認状態、statusは制度受付状態、publicationは掲載可否で、相互に代用しません。
 
-## 公開前の残作業
-まだ未公開。GitHub repository・remote・push・Pages公開・親サイト追加は未実施。相対パスのためGitHub Pagesのプロジェクト配信に対応できます。
-公開前に期限・予算と公式URLを再確認し、専用訂正窓口の正式URL・実際の収集設定・Privacyを整合させてください。現在は説明領域のみで偽リンクはありません。個別受給相談は扱いません。
-公開URL確定後に必要なcanonical/sitemap等を検討し、仮の公開URLを入れないでください。条件入力をURLへ入れないでください。
+## 公開・訂正窓口
+公開先は https://yhayashi-dev.github.io/tokyo-support-finder/ 。静的ファイルをmainのルートから配信します。公開結果は管理報告で確認してください。相対パスでGitHub Pagesのプロジェクト配信に対応します。
+公開前に期限・予算と公式URLを再確認し、専用訂正窓口の収集設定・Privacyを整合させてください。Google Formsはsrc/ui-text.jsのcorrectionFormURLに設定しています。3質問、訂正内容のみ必須、ログイン不要、メール自動収集なし（2026-09-13回答画面確認）。個別受給相談は扱いません。
+canonical・OGP URL・sitemap・robotsは上記公開URLと一致させてください。条件入力をURLへ入れないでください。
 
 ## 保守
 期間型5件を毎週、常設型5件を4週で一巡。週30分は目標で実証済み保証ではありません。未確認や翻訳待ちは再確認表示へ下げる。完全自動更新はありません。

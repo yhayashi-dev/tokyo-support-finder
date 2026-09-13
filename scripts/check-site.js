@@ -23,6 +23,7 @@ const ids=new Set([...html.matchAll(/id="([^"]+)"/g)].map(m=>m[1]));
 let links=0;
 for(const m of html.matchAll(/(?:href|src)="([^"]+)"/g)){
  const url=m[1];if(url.startsWith('#'))assert.ok(ids.has(url.slice(1)),url);
+ else if(url.startsWith('https://'))assert.equal(url,'https://yhayashi-dev.github.io/tokyo-support-finder/');
  else {assert.ok(!url.startsWith('http'),url);assert.ok(existsSync(resolve(root,url)),url);}
  links++;
 }

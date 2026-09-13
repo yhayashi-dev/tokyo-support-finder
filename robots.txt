@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yhayashi-dev.github.io/tokyo-support-finder/sitemap.xml

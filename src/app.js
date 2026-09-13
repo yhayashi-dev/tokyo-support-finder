@@ -1,5 +1,5 @@
 import {evaluate,availability,listed,safeOfficialURL} from './logic.js';
-import {words,policies} from './ui-text.js';
+import {words,policies,correctionFormURL} from './ui-text.js';
 let lang='ja',programs=[],inputs={},extraInputs=new Map(),active=null;
 const $=id=>document.getElementById(id), t=()=>words[lang], local=v=>v?.[lang]??'';
 const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
@@ -94,7 +94,7 @@ function openProgram(p,repaint=false){
  body.append(ul,el('p',t().checked+': '+p.checkedAt+' · '+t().next+': '+p.nextReview,'detail-meta'));
  if(!repaint)$('detail').showModal();
 }
-function openPolicy(name){active={page:name};$('dialog-kicker').textContent='Tokyo Support Finder';const p=policies[name][lang],body=$('dialog-body');body.replaceChildren();const h=el('h2',p.title);h.id='dialog-title';body.append(h);$('detail').setAttribute('aria-labelledby','dialog-title');for(const line of p.text)body.append(el('p',line));if(!$('detail').open)$('detail').showModal();}
+function openPolicy(name){active={page:name};$('dialog-kicker').textContent='Tokyo Support Finder';const p=policies[name][lang],body=$('dialog-body');body.replaceChildren();const h=el('h2',p.title);h.id='dialog-title';body.append(h);$('detail').setAttribute('aria-labelledby','dialog-title');for(const line of p.text)body.append(el('p',line));if(name==='corrections'){const a=el('a',lang==='ja'?'訂正連絡フォームを開く（Google Forms）':'Open the correction form (Google Forms)');a.href=correctionFormURL;a.target='_blank';a.rel='noopener noreferrer';body.append(a);}if(!$('detail').open)$('detail').showModal();}
 $('close-dialog').addEventListener('click',()=>$('detail').close());$('detail').addEventListener('close',()=>{active=null;});
 $('reset').addEventListener('click',()=>{inputs={};extraInputs=new Map();renderChrome();});
 $('filters').addEventListener('submit',e=>e.preventDefault());
