@@ -1,0 +1,330 @@
+[
+  {
+    "caseId": "01-A",
+    "programId": "tokyo-app-living-support",
+    "input": {
+      "registered_region": "meguro",
+      "adult_age": 52,
+      "card_available": "yes"
+    },
+    "expected": "match"
+  },
+  {
+    "caseId": "01-B",
+    "programId": "tokyo-app-living-support",
+    "input": {
+      "registered_region": "meguro",
+      "adult_age": 14,
+      "card_available": "yes"
+    },
+    "expected": "mismatch"
+  },
+  {
+    "caseId": "01-C",
+    "programId": "tokyo-app-living-support",
+    "input": {
+      "adult_age": 52,
+      "registered_region": "unknown",
+      "card_available": "unknown"
+    },
+    "expected": "unknown"
+  },
+  {
+    "caseId": "02-A",
+    "programId": "tokyo-zero-emission-points",
+    "input": {
+      "region": "meguro",
+      "purchase_store": "registered",
+      "equipment_region": "meguro"
+    },
+    "expected": "match"
+  },
+  {
+    "caseId": "02-B",
+    "programId": "tokyo-zero-emission-points",
+    "input": {
+      "region": "meguro",
+      "purchase_store": "unregistered"
+    },
+    "expected": "mismatch"
+  },
+  {
+    "caseId": "02-C",
+    "programId": "tokyo-zero-emission-points",
+    "input": {
+      "region": "unknown",
+      "purchase_store": "unknown"
+    },
+    "expected": "unknown"
+  },
+  {
+    "caseId": "03-A",
+    "programId": "tokyo-018-support",
+    "input": {
+      "child_band": "under18",
+      "registered_region": "meguro",
+      "nationality_group": "foreign"
+    },
+    "expected": "match"
+  },
+  {
+    "caseId": "03-B",
+    "programId": "tokyo-018-support",
+    "input": {
+      "child_band": "over18"
+    },
+    "expected": "mismatch"
+  },
+  {
+    "caseId": "03-C",
+    "programId": "tokyo-018-support",
+    "input": {
+      "child_band": "18",
+      "registered_region": "other_tokyo"
+    },
+    "expected": "unknown"
+  },
+  {
+    "caseId": "04-A",
+    "programId": "meguro-child-allowance",
+    "input": {
+      "child_band": "under18",
+      "region": "meguro"
+    },
+    "expected": "match"
+  },
+  {
+    "caseId": "04-B",
+    "programId": "meguro-child-allowance",
+    "input": {
+      "child_band": "over18"
+    },
+    "expected": "mismatch"
+  },
+  {
+    "caseId": "04-C",
+    "programId": "meguro-child-allowance",
+    "input": {
+      "child_band": "unknown"
+    },
+    "expected": "unknown"
+  },
+  {
+    "caseId": "05-A",
+    "programId": "meguro-child-medical",
+    "input": {
+      "child_band": "under18",
+      "region": "meguro",
+      "insurance": "other_japan_public"
+    },
+    "expected": "match"
+  },
+  {
+    "caseId": "05-B",
+    "programId": "meguro-child-medical",
+    "input": {
+      "child_band": "over18",
+      "region": "meguro"
+    },
+    "expected": "mismatch"
+  },
+  {
+    "caseId": "05-C",
+    "programId": "meguro-child-medical",
+    "input": {
+      "child_band": "under18",
+      "region": "meguro",
+      "insurance": "unknown"
+    },
+    "expected": "unknown"
+  },
+  {
+    "caseId": "06-A",
+    "programId": "meguro-hearing-aid",
+    "input": {
+      "region": "meguro",
+      "adult_age": 70,
+      "resident_tax": "exempt"
+    },
+    "expected": "match"
+  },
+  {
+    "caseId": "06-B",
+    "programId": "meguro-hearing-aid",
+    "input": {
+      "region": "meguro",
+      "adult_age": 64,
+      "resident_tax": "exempt"
+    },
+    "expected": "mismatch"
+  },
+  {
+    "caseId": "06-C",
+    "programId": "meguro-hearing-aid",
+    "input": {
+      "region": "meguro",
+      "adult_age": 70,
+      "resident_tax": "unknown"
+    },
+    "expected": "unknown"
+  },
+  {
+    "caseId": "07-A",
+    "programId": "meguro-housing-security-rent",
+    "input": {
+      "housing": "rental",
+      "support_scope": "rent"
+    },
+    "expected": "match"
+  },
+  {
+    "caseId": "07-B",
+    "programId": "meguro-housing-security-rent",
+    "input": {
+      "housing": "owner",
+      "support_scope": "owner_mortgage"
+    },
+    "expected": "mismatch"
+  },
+  {
+    "caseId": "07-C",
+    "programId": "meguro-housing-security-rent",
+    "input": {
+      "housing": "unknown",
+      "support_scope": "unknown"
+    },
+    "expected": "unknown"
+  },
+  {
+    "caseId": "08-A",
+    "programId": "tokyo-marusho",
+    "input": {
+      "region": "meguro",
+      "insurance": "other_japan_public"
+    },
+    "expected": "match"
+  },
+  {
+    "caseId": "08-B",
+    "programId": "tokyo-marusho",
+    "input": {
+      "region": "meguro",
+      "insurance": "not_enrolled"
+    },
+    "expected": "mismatch"
+  },
+  {
+    "caseId": "08-C",
+    "programId": "tokyo-marusho",
+    "input": {
+      "region": "meguro",
+      "insurance": "unknown"
+    },
+    "expected": "unknown"
+  },
+  {
+    "caseId": "09-A",
+    "programId": "meguro-mental-outpatient",
+    "input": {
+      "support_scope": "mental_outpatient",
+      "region": "meguro"
+    },
+    "expected": "match"
+  },
+  {
+    "caseId": "09-B",
+    "programId": "meguro-mental-outpatient",
+    "input": {
+      "support_scope": "inpatient_only"
+    },
+    "expected": "mismatch"
+  },
+  {
+    "caseId": "09-C",
+    "programId": "meguro-mental-outpatient",
+    "input": {
+      "support_scope": "unknown"
+    },
+    "expected": "unknown"
+  },
+  {
+    "caseId": "10-A",
+    "programId": "meguro-nhi-flat-rate-reduction",
+    "input": {
+      "insurance": "meguro_nhi"
+    },
+    "expected": "match"
+  },
+  {
+    "caseId": "10-B",
+    "programId": "meguro-nhi-flat-rate-reduction",
+    "input": {
+      "insurance": "other_japan_public"
+    },
+    "expected": "mismatch"
+  },
+  {
+    "caseId": "10-C",
+    "programId": "meguro-nhi-flat-rate-reduction",
+    "input": {
+      "insurance": "unknown",
+      "resident_tax": "exempt"
+    },
+    "expected": "unknown"
+  },
+  {
+    "caseId": "11-A",
+    "programId": "meguro-school-expense-support",
+    "input": {
+      "region": "meguro",
+      "school_type": "public_compulsory"
+    },
+    "expected": "match"
+  },
+  {
+    "caseId": "11-B",
+    "programId": "meguro-school-expense-support",
+    "input": {
+      "region": "meguro",
+      "school_type": "international"
+    },
+    "expected": "mismatch"
+  },
+  {
+    "caseId": "11-C",
+    "programId": "meguro-school-expense-support",
+    "input": {
+      "region": "meguro",
+      "school_type": "unknown"
+    },
+    "expected": "unknown"
+  },
+  {
+    "caseId": "12-A",
+    "programId": "meguro-home-energy-equipment",
+    "input": {
+      "registered_region": "meguro",
+      "equipment_region": "meguro",
+      "housing": "rental"
+    },
+    "expected": "match"
+  },
+  {
+    "caseId": "12-B",
+    "programId": "meguro-home-energy-equipment",
+    "input": {
+      "registered_region": "meguro",
+      "equipment_region": "other_tokyo"
+    },
+    "expected": "mismatch"
+  },
+  {
+    "caseId": "12-C",
+    "programId": "meguro-home-energy-equipment",
+    "input": {
+      "registered_region": "unknown",
+      "equipment_region": "meguro"
+    },
+    "expected": "unknown"
+  }
+]

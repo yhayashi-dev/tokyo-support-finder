@@ -1,0 +1,2341 @@
+{
+  "schemaVersion": 1,
+  "referenceDate": "2026-09-13",
+  "programs": [
+    {
+      "id": "tokyo-app-living-support",
+      "publication": "published",
+      "number": 1,
+      "name": {
+        "ja": "東京アプリ生活応援事業",
+        "en": "Tokyo App Living Support Points"
+      },
+      "englishNameKind": "explanatory",
+      "category": "living",
+      "region": "tokyo",
+      "operator": {
+        "ja": "東京都",
+        "en": "Tokyo Metropolitan Government"
+      },
+      "status": "open",
+      "checkedAt": "2026-09-13",
+      "nextReview": "2026-09-20",
+      "translationCheckedAt": "2026-09-13",
+      "budget": {
+        "state": "S",
+        "mayCloseEarly": null
+      },
+      "budgetClosed": false,
+      "events": [
+        {
+          "type": "application_window",
+          "state": "K",
+          "start": "2026-02-02",
+          "startState": "K",
+          "startTime": "13:00:00",
+          "end": "2027-04-01",
+          "endTime": null
+        },
+        {
+          "type": "points_expiry",
+          "state": "U",
+          "date": null,
+          "note": {
+            "ja": "ポイント履歴で個別確認。交換後は交換先の期限。",
+            "en": "Check your point history. Exchanged points follow the receiving provider's expiry rules."
+          }
+        }
+      ],
+      "amount": {
+        "value": 11000,
+        "kind": "points",
+        "state": "K"
+      },
+      "summary": {
+        "ja": "本人のマイナンバーカードで確認して、東京ポイントを受け取る事業です。",
+        "en": "Receive 11,000 Tokyo Points through the Tokyo App after identity verification. These are points, not a cash payment."
+      },
+      "benefit": {
+        "ja": "東京ポイント11,000pt。申込後に付与。現金給付と表示しない",
+        "en": "Receive 11,000 Tokyo Points through the Tokyo App after identity verification. These are points, not a cash payment."
+      },
+      "conditions": {
+        "ja": "15歳以上で、東京都に住民登録がある方。有効なマイナンバーカードと、対応スマートフォンによる本人確認が必要です。所得・世帯人数の制限は、確認した案内には記載されていません。",
+        "en": "The program lists Tokyo residence registration, age 15 or over, a valid card and identity verification. Income and household limits are not stated in the guidance checked. Card validity, device support and residence-status questions require confirmation."
+      },
+      "apply": {
+        "ja": "東京アプリとマイナアプリで本人確認を行い、生活応援事業のポイントを申し込みます。",
+        "en": "For registered Tokyo residents aged 15 or over with a valid My Number Card. Verify your identity in the official apps, then apply for the points."
+      },
+      "documents": {
+        "ja": "本人の有効なマイナンバーカードと所定の暗証番号。暗証番号は公式アプリでのみ使用してください。",
+        "en": "Valid My Number Card and the required PINs, used only in the official apps. A compatible phone is required."
+      },
+      "caution": {
+        "ja": "カードの有効性・端末対応を確認してください。申込期間と、付与されたポイントの利用期限は別です。",
+        "en": "Applications run from 2 February 2026 at 1 p.m. to 1 April 2027. Check the closing time. Your points have a separate expiry date in the app."
+      },
+      "foreign": {
+        "ja": "公式案内で国籍による除外は確認できませんでした。在留資格の個別条件は公式窓口で確認してください。",
+        "en": "The official guidance we checked does not state a nationality exclusion. Ask the program office about conditions linked to your residence status."
+      },
+      "unknown": {
+        "ja": "申請書類の英語対応は未確認です。国籍・在留資格の個別条件は公式窓口で確認してください。カードや必要書類の詳細は、下記の案内と公式ページをご確認ください。",
+        "en": "We have not confirmed whether application documents can be completed in English. Check any individual nationality or residence-status conditions with the program office. See the document guidance and official page for card requirements and alternatives."
+      },
+      "links": [
+        {
+          "url": "https://www.tokyoapp.metro.tokyo.lg.jp/tokyoapp-seikatsu-support/",
+          "label": {
+            "ja": "公式事業概要：期間・対象・ポイント",
+            "en": "Official program guidance"
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.tokyoapp.metro.tokyo.lg.jp/faq.html",
+          "label": {
+            "ja": "公式FAQ：本人確認・利用期限",
+            "en": "Additional official reference"
+          },
+          "verified": true
+        }
+      ],
+      "assessment": {
+        "nationality": {
+          "state": "S",
+          "value": null,
+          "source": "https://www.tokyoapp.metro.tokyo.lg.jp/tokyoapp-seikatsu-support/"
+        },
+        "residenceStatus": {
+          "state": "S",
+          "value": null,
+          "source": "https://www.tokyoapp.metro.tokyo.lg.jp/tokyoapp-seikatsu-support/"
+        },
+        "officialEnglish": {
+          "state": "U",
+          "value": null
+        },
+        "applicationLanguage": {
+          "state": "U",
+          "value": null
+        },
+        "myNumberCard": {
+          "state": "K",
+          "value": "required"
+        },
+        "income": {
+          "state": "S",
+          "value": null
+        },
+        "ageReference": {
+          "state": "S",
+          "value": null
+        }
+      },
+      "sourceSheetRows": [
+        {
+          "key": "stable ID / 掲載",
+          "value": "tokyo-app-living-support / 採用"
+        },
+        {
+          "key": "英語表示名",
+          "value": "Tokyo App Living Support Points（説明訳）"
+        },
+        {
+          "key": "実施主体／申請窓口",
+          "value": "K 東京都／東京アプリ運営事務局、東京アプリ内申込"
+        },
+        {
+          "key": "対象地域／カテゴリー",
+          "value": "K 東京都全域（目黒区を含む）／生活・ポイント"
+        },
+        {
+          "key": "受付状態・開始・終了",
+          "value": "K 受付中。2026-02-02 13:00 JST～2027-04-01。終了日の時刻U"
+        },
+        {
+          "key": "対象行為期間／利用期限",
+          "value": "K 本人確認・申込は事業期間内。ポイントの利用期限はアプリのポイント履歴で個別確認。交換後は交換先の期限。全員共通の失効日U"
+        },
+        {
+          "key": "支援・額",
+          "value": "K 東京ポイント11,000pt。申込後に付与。現金給付と表示しない"
+        },
+        {
+          "key": "年齢／基準日",
+          "value": "K 15歳以上／参加時点で要件確認。独立した固定年齢基準日の指定はS。14歳は現在の条件不一致であって期間全体で永久対象外ではない"
+        },
+        {
+          "key": "住民登録",
+          "value": "K 東京都内の住民登録が必要。居住地入力だけでは充足と扱わない"
+        },
+        {
+          "key": "所得／世帯",
+          "value": "S 所得制限・世帯人数による区分は確認範囲に記載なし"
+        },
+        {
+          "key": "その他必須／除外",
+          "value": "K 有効なマイナンバーカード、対応スマートフォン、東京アプリとマイナアプリで本人確認。本人のカードで申込。通知カードを代用しない"
+        },
+        {
+          "key": "カード／代替",
+          "value": "K 必須。カードなしの代替参加経路はS。窓口・郵送でポイント申請できるとは案内しない"
+        },
+        {
+          "key": "申請・必要書類",
+          "value": "K アプリ登録→カード本人確認→生活応援ポイント申込。有効なカードと所定暗証番号を本人が公式アプリで使用。当サイトでは番号を入力させない"
+        },
+        {
+          "key": "国籍／在留／保険",
+          "value": "国籍S・在留S。永住者限定／外国籍一律可とはしない。保険加入条件S"
+        },
+        {
+          "key": "機械条件",
+          "value": "対象者のregistered_region＝meguro/other_tokyo、adult_age≥15、card_available=yes。都外住民登録・15歳未満・カードなしはこの現行参加経路の不一致。未回答はunknown"
+        },
+        {
+          "key": "人間確認・注意",
+          "value": "本人確認成功、端末対応、カードの有効性・申込状況、国籍・在留の非明示条件。予算終了についてS。参加期間とポイント期限を混ぜない"
+        },
+        {
+          "key": "原典",
+          "value": "[公式事業概要：期間・対象・ポイント](https://www.tokyoapp.metro.tokyo.lg.jp/tokyoapp-seikatsu-support/)／[公式FAQ：本人確認・利用期限](https://www.tokyoapp.metro.tokyo.lg.jp/faq.html)"
+        }
+      ],
+      "rulesVersion": "2026-09-13",
+      "manualReviewRequired": true
+    },
+    {
+      "id": "tokyo-zero-emission-points",
+      "publication": "published",
+      "number": 2,
+      "name": {
+        "ja": "東京ゼロエミポイント",
+        "en": "Tokyo Energy-Saving Appliance Discounts"
+      },
+      "englishNameKind": "explanatory",
+      "category": "energy",
+      "region": "tokyo",
+      "operator": {
+        "ja": "東京都・東京都環境公社",
+        "en": "Tokyo Metropolitan Government / Tokyo Environmental Public Service Corporation"
+      },
+      "status": "open",
+      "checkedAt": "2026-09-13",
+      "nextReview": "2026-09-20",
+      "translationCheckedAt": "2026-09-13",
+      "budget": {
+        "state": "K",
+        "mayCloseEarly": true
+      },
+      "budgetClosed": false,
+      "events": [
+        {
+          "type": "eligible_purchase",
+          "state": "K",
+          "start": "2024-10-01",
+          "end": "2027-03-31"
+        },
+        {
+          "type": "eligible_purchase",
+          "state": "K",
+          "start": "2025-08-30",
+          "end": "2027-03-31",
+          "note": {
+            "ja": "高齢者・障害者の対象エアコン枠",
+            "en": "Special air-conditioner offer for older people or people with qualifying disabilities"
+          }
+        },
+        {
+          "type": "application_window",
+          "state": "U",
+          "start": null,
+          "end": null
+        }
+      ],
+      "amount": {
+        "value": null,
+        "kind": "variable",
+        "state": "K",
+        "specialOffer": 80000
+      },
+      "summary": {
+        "ja": "対象の省エネ家電を登録販売店で購入する際の値引きです。",
+        "en": "Get a discount on an eligible energy-saving appliance at a registered shop. The amount depends on the product and program rules."
+      },
+      "benefit": {
+        "ja": "対象製品・条件別の店頭値引き。高齢者・障害者の対象高効率エアコンは80,000pt。通常機器は公式対象製品表で確認、金額の自動算定なし",
+        "en": "Get a discount on an eligible energy-saving appliance at a registered shop. The amount depends on the product and program rules."
+      },
+      "conditions": {
+        "ja": "都内住所を公的書類で証明できる方が、登録店で対象新品を購入し、都内住宅へ設置することが必要です。高齢者向け枠は購入時65歳以上。障害者向け枠・機種・併用条件は販売店へご確認ください。",
+        "en": "Use a registered shop and an eligible new appliance installed in a Tokyo home. The special 80,000-point air-conditioner offer requires age 65 at purchase or qualifying disability evidence. Check the product, location and restrictions on combining grants."
+      },
+      "apply": {
+        "ja": "購入前に登録販売店で対象製品と条件を確認します。ポイントは店頭で値引きされ、申請は販売店が行います。",
+        "en": "Show official proof of your Tokyo address. Ask the shop to check the product and apply. A My Number Card is not the only accepted ID."
+      },
+      "documents": {
+        "ja": "本人・住所の確認書類。買替え内容により、旧機器の写真や製造年等の証明。代理の場合は追加書類が必要です。",
+        "en": "Official proof of your identity and Tokyo address; photos or evidence of the old appliance where required. Ask the shop about proxy documents."
+      },
+      "caution": {
+        "ja": "機器・店舗・設置場所・他の助成との併用を確認してください。具体的な在留カードの受理条件は未確認です。",
+        "en": "Eligible purchases end on 31 March 2027, unless the budget runs out earlier. Check before buying. The special air-conditioner offer is 80,000 points and has age or disability conditions."
+      },
+      "foreign": {
+        "ja": "公式案内で国籍による除外は確認できませんでした。在留資格の個別条件は公式窓口で確認してください。",
+        "en": "The official guidance we checked does not state a nationality exclusion. Ask the program office about conditions linked to your residence status."
+      },
+      "unknown": {
+        "ja": "申請書類の英語対応は未確認です。国籍・在留資格の個別条件は公式窓口で確認してください。カードや必要書類の詳細は、下記の案内と公式ページをご確認ください。",
+        "en": "We have not confirmed whether application documents can be completed in English. Check any individual nationality or residence-status conditions with the program office. See the document guidance and official page for card requirements and alternatives."
+      },
+      "links": [
+        {
+          "url": "https://www.tokyo-co2down.jp/subsidy/katei-zeroemi/",
+          "label": {
+            "ja": "東京都環境公社：期間・支援枠",
+            "en": "Official program guidance"
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.tz-points.jp/consumer",
+          "label": {
+            "ja": "事務局：対象者・書類",
+            "en": "Additional official reference"
+          },
+          "verified": true
+        }
+      ],
+      "assessment": {
+        "nationality": {
+          "state": "S",
+          "value": null,
+          "source": "https://www.tokyo-co2down.jp/subsidy/katei-zeroemi/"
+        },
+        "residenceStatus": {
+          "state": "S",
+          "value": null,
+          "source": "https://www.tokyo-co2down.jp/subsidy/katei-zeroemi/"
+        },
+        "officialEnglish": {
+          "state": "U",
+          "value": null
+        },
+        "applicationLanguage": {
+          "state": "U",
+          "value": null
+        },
+        "myNumberCard": {
+          "state": "K",
+          "value": "alternative_route"
+        },
+        "income": {
+          "state": "S",
+          "value": null
+        },
+        "ageReference": {
+          "state": "K",
+          "value": "see_conditions"
+        }
+      },
+      "sourceSheetRows": [
+        {
+          "key": "stable ID / 掲載",
+          "value": "tokyo-zero-emission-points / 採用"
+        },
+        {
+          "key": "英語表示名",
+          "value": "Tokyo Energy-Saving Appliance Discounts（説明訳）"
+        },
+        {
+          "key": "実施主体／窓口",
+          "value": "K 東京都・東京都環境公社／登録販売店、東京ゼロエミポイント事務局"
+        },
+        {
+          "key": "対象地域／カテゴリー",
+          "value": "K 東京都／省エネ・設備・高齢者"
+        },
+        {
+          "key": "状態・開始・終了",
+          "value": "K 受付案内あり・予算条件付き。通常対象購入2024-10-01～2027-03-31。高齢者等の対象エアコン購入枠2025-08-30～2027-03-31"
+        },
+        {
+          "key": "対象行為期間／申請期限",
+          "value": "上記は購入期間。販売店側申請の最終締切を購入期限と同一とする根拠はU。個人の直接申請は不可。購入前に販売店確認"
+        },
+        {
+          "key": "支援・額",
+          "value": "K 対象製品・条件別の店頭値引き。高齢者・障害者の対象高効率エアコンは80,000pt。通常機器は公式対象製品表で確認、金額の自動算定なし"
+        },
+        {
+          "key": "年齢／基準日",
+          "value": "通常枠の年齢条件S。高齢者枠はK 購入時65歳以上。障害者枠とのORであり65歳未満を制度全体から除外しない"
+        },
+        {
+          "key": "住民登録",
+          "value": "K 都内住所を公的書類で証明、都内住宅へ設置。高齢者等エアコン枠は自らの居住地。住民票の提出が唯一の方法とはしない"
+        },
+        {
+          "key": "所得／世帯",
+          "value": "S 所得制限・世帯人数条件の記載なし"
+        },
+        {
+          "key": "必須／除外",
+          "value": "K 登録店舗、対象新品機器等の条件。都・公社の同一対象の同種助成との併用制限。買替条件・新規購入対象は機器ごとに確認"
+        },
+        {
+          "key": "カード／代替",
+          "value": "K カード必須ではない。免許証等の住所・本人確認書類。年齢／障害者枠は対応する証明が必要"
+        },
+        {
+          "key": "申請・書類",
+          "value": "K 店頭手続き。本人・住所証明、該当する場合は買替前機器の写真・製造年、代理人書類。具体的な在留カード受理条件はU"
+        },
+        {
+          "key": "機械条件",
+          "value": "regionが都内ならmatch、都外はunknown（設置・住所条件の確認へ）。年齢は高齢者枠の説明切替のみ。持家/賃貸では除外しない"
+        },
+        {
+          "key": "人間確認・注意",
+          "value": "機器型番・性能・店舗・設置場所・併用・購入前手続き。K 予算に達すると早期終了の可能性"
+        },
+        {
+          "key": "原典",
+          "value": "[東京都環境公社：期間・支援枠](https://www.tokyo-co2down.jp/subsidy/katei-zeroemi/)／[事務局：対象者・書類](https://www.tz-points.jp/consumer)"
+        }
+      ],
+      "rulesVersion": "2026-09-13",
+      "manualReviewRequired": true
+    },
+    {
+      "id": "tokyo-018-support",
+      "publication": "published",
+      "number": 3,
+      "name": {
+        "ja": "０１８サポート",
+        "en": "Tokyo 018 Child Support"
+      },
+      "englishNameKind": "explanatory",
+      "category": "children",
+      "region": "tokyo",
+      "operator": {
+        "ja": "東京都",
+        "en": "Tokyo Metropolitan Government"
+      },
+      "status": "open",
+      "checkedAt": "2026-09-13",
+      "nextReview": "2026-09-20",
+      "translationCheckedAt": "2026-09-13",
+      "budget": {
+        "state": "S",
+        "mayCloseEarly": null
+      },
+      "budgetClosed": false,
+      "events": [
+        {
+          "type": "application_window",
+          "state": "K",
+          "start": "2026-04-01",
+          "end": null,
+          "endState": "U"
+        },
+        {
+          "type": "payment_batch_cutoff",
+          "state": "K",
+          "date": "2026-11-01",
+          "note": {
+            "ja": "12月支払開始分",
+            "en": "For payments starting in December"
+          }
+        },
+        {
+          "type": "payment_batch_cutoff",
+          "state": "K",
+          "date": "2027-03-01",
+          "note": {
+            "ja": "4月支払開始分",
+            "en": "For payments starting in April"
+          }
+        }
+      ],
+      "amount": {
+        "value": 5000,
+        "kind": "monthly_child",
+        "state": "K"
+      },
+      "summary": {
+        "ja": "子どもの対象月に応じて、1人月額5,000円を支給します。",
+        "en": "Monthly support of ¥5,000 per eligible child. The total depends on eligible months."
+      },
+      "benefit": {
+        "ja": "対象月につき子1人5,000円。12か月該当すれば60,000円で、居住期間を無視した一律年額は出さない",
+        "en": "Monthly support of ¥5,000 per eligible child. The total depends on eligible months."
+      },
+      "conditions": {
+        "ja": "原則として都内に住所がある、0歳から18歳到達後最初の3月31日までの子ども。所得制限はありません。就学・療養等で一時的に都外にいる場合は、例外の条件をご確認ください。",
+        "en": "Normally a Tokyo address is required; temporary absence for study or care may qualify. Support runs through the first 31 March after turning 18. There is no income limit. A separate application route is available without a My Number Card."
+      },
+      "apply": {
+        "ja": "公式サイトから申請します。マイナンバーカードを使わないオンライン方式もあります。紙の申請は事務局へご相談ください。",
+        "en": "Normally for children living in Tokyo, through the first 31 March after turning 18. There is no income limit. Apply through the official site; another online route is available without a My Number Card."
+      },
+      "documents": {
+        "ja": "本人確認・口座・家族関係の証明。別居や18歳の代理申請などは追加書類が必要です。",
+        "en": "Identity, bank-account and family-relationship documents. Residence cards and Special Permanent Resident Certificates are listed. Extra documents may be needed for separate households."
+      },
+      "caution": {
+        "ja": "対象となる月・年度末の年齢・別居等を確認してください。支払回の申請締切は、制度全体の終了日ではありません。",
+        "en": "Temporary residence outside Tokyo may be covered. Check the rules for your child and the relevant payment period."
+      },
+      "foreign": {
+        "ja": "公式FAQは、支給要件を満たす外国籍の方も日本国籍の方と同様に対象と明示しています。在留区分ごとの詳細や申請書類の言語は窓口へご確認ください。",
+        "en": "The official FAQ says foreign nationals who meet the requirements are eligible on the same basis as Japanese nationals. Check details of residence status and application language with the office."
+      },
+      "unknown": {
+        "ja": "申請書類の英語対応は未確認です。カードや必要書類の詳細は、下記の案内と公式ページをご確認ください。",
+        "en": "We have not confirmed whether application documents can be completed in English. See the document guidance and official page for card requirements and alternatives."
+      },
+      "links": [
+        {
+          "url": "https://018support.metro.tokyo.lg.jp/",
+          "label": {
+            "ja": "公式概要",
+            "en": "Official program guidance"
+          },
+          "verified": true
+        },
+        {
+          "url": "https://018support.metro.tokyo.lg.jp/faq/",
+          "label": {
+            "ja": "FAQ：対象者・国籍・所得・申請",
+            "en": "Additional official reference"
+          },
+          "verified": true
+        }
+      ],
+      "assessment": {
+        "nationality": {
+          "state": "N",
+          "value": "same_requirements",
+          "source": "https://018support.metro.tokyo.lg.jp/faq/"
+        },
+        "residenceStatus": {
+          "state": "S",
+          "value": null,
+          "source": "https://018support.metro.tokyo.lg.jp/"
+        },
+        "officialEnglish": {
+          "state": "K",
+          "value": "language_selector_only"
+        },
+        "applicationLanguage": {
+          "state": "U",
+          "value": null
+        },
+        "myNumberCard": {
+          "state": "K",
+          "value": "alternative_route"
+        },
+        "income": {
+          "state": "N",
+          "value": "no_income_limit"
+        },
+        "ageReference": {
+          "state": "K",
+          "value": "see_conditions"
+        }
+      },
+      "sourceSheetRows": [
+        {
+          "key": "stable ID / 掲載",
+          "value": "tokyo-018-support / 採用"
+        },
+        {
+          "key": "英語表示名",
+          "value": "Tokyo 018 Child Support（説明訳）"
+        },
+        {
+          "key": "実施主体／窓口",
+          "value": "K 東京都／018サポート事務局・公式申請サイト"
+        },
+        {
+          "key": "対象地域／カテゴリー",
+          "value": "K 東京都／子育て"
+        },
+        {
+          "key": "状態・開始・終了",
+          "value": "K 2026年度新規申請受付中（開始2026-04-01）。年度分の最終申請終了日はU。各支払回の締切を制度終了日としない"
+        },
+        {
+          "key": "対象行為期間・別期限",
+          "value": "K 各月1日時点の都内居住等。2026-11-01は12月支払開始の申請期限、2027-03-01は4月支払開始の申請期限。2025年度分の遡及期限は別年度として管理"
+        },
+        {
+          "key": "支援・額",
+          "value": "K 対象月につき子1人5,000円。12か月該当すれば60,000円で、居住期間を無視した一律年額は出さない"
+        },
+        {
+          "key": "年齢／基準日",
+          "value": "K 0歳～18歳到達後最初の3月31日。月初の要件・年度境界を人間確認"
+        },
+        {
+          "key": "住民登録",
+          "value": "K 原則都内住所。就学・療養等の一時都外や住民票と現住所が異なる例外あり"
+        },
+        {
+          "key": "国籍／在留",
+          "value": "N 要件を満たす外国籍の方も日本国籍の方と同様に対象（FAQ対象者Q3）。在留区分ごとの詳細はS"
+        },
+        {
+          "key": "所得／世帯",
+          "value": "N 所得制限なし。K 親子関係・別居等で書類が異なる"
+        },
+        {
+          "key": "必須／除外",
+          "value": "対象年齢・居住月・監護関係等。既受給者の重複新規申請を避ける。18歳の代理申請は委任確認"
+        },
+        {
+          "key": "カード／代替",
+          "value": "K カード方式以外のオンライン申請あり。本人確認に在留カード・特別永住者証明書等の案内あり。紙申請は事務局へ相談"
+        },
+        {
+          "key": "申請・書類",
+          "value": "K 本人確認、口座、家族関係の証明。別居等は追加書類。カード方式は親子同世帯・公金受取口座等の固有条件あり"
+        },
+        {
+          "key": "公式英語",
+          "value": "K 公式サイトにEnglish選択あり。全様式が英語で提出可能かはU"
+        },
+        {
+          "key": "機械条件",
+          "value": "child_band=0–17かつ対象子のregistered_regionが都内→match。19以上→mismatch。18歳または都外→unknown（年度境界・例外）。カードなし・外国籍・課税を理由に除外しない"
+        },
+        {
+          "key": "人間確認・注意",
+          "value": "対象月・年度末・別居例外・代理／既受給状況。遡及期限を現年度申請終了へ誤流用しない"
+        },
+        {
+          "key": "原典",
+          "value": "[公式概要](https://018support.metro.tokyo.lg.jp/)／[FAQ：対象者・国籍・所得・申請](https://018support.metro.tokyo.lg.jp/faq/)"
+        }
+      ],
+      "rulesVersion": "2026-09-13",
+      "manualReviewRequired": true
+    },
+    {
+      "id": "meguro-child-allowance",
+      "publication": "published",
+      "number": 4,
+      "name": {
+        "ja": "児童手当",
+        "en": "Child Allowance: Applying through Meguro"
+      },
+      "englishNameKind": "explanatory",
+      "category": "children",
+      "region": "meguro",
+      "operator": {
+        "ja": "国制度・目黒区",
+        "en": "National program / Meguro City"
+      },
+      "status": "ongoing",
+      "checkedAt": "2026-09-13",
+      "nextReview": "2026-10-11",
+      "translationCheckedAt": "2026-09-13",
+      "budget": {
+        "state": "S",
+        "mayCloseEarly": null
+      },
+      "budgetClosed": false,
+      "events": [
+        {
+          "type": "retroactive_claim",
+          "state": "K",
+          "date": null,
+          "note": {
+            "ja": "事由発生日の翌日から15日以内。遅れた場合も請求可能。",
+            "en": "Within 15 days from the day after the relevant event. Late claims are still possible."
+          }
+        }
+      ],
+      "amount": {
+        "value": [
+          10000,
+          15000,
+          30000
+        ],
+        "kind": "child_allowance",
+        "state": "K"
+      },
+      "summary": {
+        "ja": "子どもの年齢や人数の条件に応じて支給する手当です。",
+        "en": "Monthly amounts are ¥15,000 for a child under 3 and ¥10,000 for an older eligible child; ¥30,000 applies to third and later children under the counting rules. There is no current income limit."
+      },
+      "benefit": {
+        "ja": "月額：3歳未満15,000円、3歳以上の対象児10,000円、第3子以降30,000円。人数カウントは別条件、総額自動計算しない",
+        "en": "Monthly amounts are ¥15,000 for a child under 3 and ¥10,000 for an older eligible child; ¥30,000 applies to third and later children under the counting rules. There is no current income limit."
+      },
+      "conditions": {
+        "ja": "子どもは原則として18歳到達後最初の3月31日まで。現行制度の所得制限はありません。主に生計を維持する方が請求し、公務員や別居などでは請求先・書類が異なります。",
+        "en": "Through the first 31 March after turning 18. The main provider normally applies to their municipality; public employees may use their employer. Income limits have been removed. Child-count, care, residence and special cases require review."
+      },
+      "apply": {
+        "ja": "正しい請求先へオンライン・郵送・窓口で手続きします。出生や転入等の後は早めに請求してください。",
+        "en": "Children are covered through the first 31 March after turning 18. Apply to the correct office, normally the main provider's municipality. Public employees may need to apply through their employer."
+      },
+      "documents": {
+        "ja": "認定請求書と本人確認書類。別居・多子算定などでは追加資料が必要です。オンラインは電子証明書付きカードが必要です。",
+        "en": "Application and identity documents. A residence card or other accepted photo ID can be used for office or postal applications. Separate-household and other special cases need extra documents."
+      },
+      "caution": {
+        "ja": "15日を過ぎても請求できますが、支給開始月が遅れる場合があります。第3子以降の数え方や監護条件は公式窓口で確認してください。",
+        "en": "Apply promptly after a birth or move. The 15-day rule affects the starting month; a late application is still possible."
+      },
+      "foreign": {
+        "ja": "公式案内で国籍による除外は確認できませんでした。在留資格の個別条件は公式窓口で確認してください。",
+        "en": "The official guidance we checked does not state a nationality exclusion. Ask the program office about conditions linked to your residence status."
+      },
+      "unknown": {
+        "ja": "申請書類の英語対応は未確認です。国籍・在留資格の個別条件は公式窓口で確認してください。カードや必要書類の詳細は、下記の案内と公式ページをご確認ください。",
+        "en": "We have not confirmed whether application documents can be completed in English. Check any individual nationality or residence-status conditions with the program office. See the document guidance and official page for card requirements and alternatives."
+      },
+      "links": [
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kosodateshien/kosodatekyouiku/kosodate/jidouteate.html",
+          "label": {
+            "ja": "区の制度概要",
+            "en": "Official program guidance"
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kosodateshien/kosodatekyouiku/kosodate/jidoteate_tetsuzukihoho.html",
+          "label": {
+            "ja": "認定請求：期限・本人確認・申請経路",
+            "en": "Additional official reference"
+          },
+          "verified": true
+        }
+      ],
+      "assessment": {
+        "nationality": {
+          "state": "S",
+          "value": null,
+          "source": "https://www.city.meguro.tokyo.jp/kosodateshien/kosodatekyouiku/kosodate/jidouteate.html"
+        },
+        "residenceStatus": {
+          "state": "S",
+          "value": null,
+          "source": "https://www.city.meguro.tokyo.jp/kosodateshien/kosodatekyouiku/kosodate/jidouteate.html"
+        },
+        "officialEnglish": {
+          "state": "U",
+          "value": null
+        },
+        "applicationLanguage": {
+          "state": "U",
+          "value": null
+        },
+        "myNumberCard": {
+          "state": "K",
+          "value": "alternative_route"
+        },
+        "income": {
+          "state": "N",
+          "value": "no_income_limit"
+        },
+        "ageReference": {
+          "state": "K",
+          "value": "see_conditions"
+        }
+      },
+      "sourceSheetRows": [
+        {
+          "key": "stable ID / 掲載",
+          "value": "meguro-child-allowance / 採用"
+        },
+        {
+          "key": "英語表示名",
+          "value": "Child Allowance: Applying through Meguro（説明訳）"
+        },
+        {
+          "key": "実施主体／窓口",
+          "value": "K 国制度・目黒区／子ども若者課。公務員は所属庁等の別窓口"
+        },
+        {
+          "key": "地域／カテゴリー",
+          "value": "全国制度の目黒区窓口案内に限定／子育て"
+        },
+        {
+          "key": "状態・開始・終了",
+          "value": "K 常設。暦上の全体開始・終了はS。請求遅れの影響を別欄へ"
+        },
+        {
+          "key": "対象行為期間・別期限",
+          "value": "K 出生等の事由発生日翌日から15日以内の請求で事由翌月分から。転入は前住地の転出予定日が事由日。15日経過後も請求可能だが開始月が遅れる"
+        },
+        {
+          "key": "支援・額",
+          "value": "K 月額：3歳未満15,000円、3歳以上の対象児10,000円、第3子以降30,000円。人数カウントは別条件、総額自動計算しない"
+        },
+        {
+          "key": "年齢／基準日",
+          "value": "K 対象児18歳到達後最初の3月31日まで。多子カウントの大学生年代と支給対象年齢を混同しない"
+        },
+        {
+          "key": "住民登録／世帯",
+          "value": "K 主たる生計維持者が請求、原則住所地。子の国内居住・監護等。DV、別居、海外留学、施設等の特例を自動除外しない"
+        },
+        {
+          "key": "所得",
+          "value": "N 現行制度に所得制限なし。旧2024年9月以前の表を使わない"
+        },
+        {
+          "key": "国籍・在留",
+          "value": "S 区の確認ページ上の国籍除外・在留区分別条件は記載なし。在留カードが本人確認書類として列挙されることはK"
+        },
+        {
+          "key": "カード／代替",
+          "value": "K 窓口・郵送では写真付の在留カード等の代替あり。オンライン方式は電子証明書付きカード必要"
+        },
+        {
+          "key": "申請・書類",
+          "value": "K 認定請求書・本人確認、別居等の追加資料。オンライン／郵送／窓口。添付不足でも請求受付可能の案内あり"
+        },
+        {
+          "key": "主な除外",
+          "value": "K 支給年齢外。請求先が違うことは制度そのものの資格不一致と扱わない"
+        },
+        {
+          "key": "機械条件",
+          "value": "child_band=0–17→match（regionは窓口案内用）。19以上→mismatch。18→unknown。所得・外国籍・カードなしを除外に使わない"
+        },
+        {
+          "key": "人間確認・注意",
+          "value": "監護・生計中心者・請求先・年度年齢・第3子カウント・遡及。15日を過ぎると申請不可とは表示しない"
+        },
+        {
+          "key": "原典",
+          "value": "[区の制度概要](https://www.city.meguro.tokyo.jp/kosodateshien/kosodatekyouiku/kosodate/jidouteate.html)／[認定請求：期限・本人確認・申請経路](https://www.city.meguro.tokyo.jp/kosodateshien/kosodatekyouiku/kosodate/jidoteate_tetsuzukihoho.html)"
+        }
+      ],
+      "rulesVersion": "2026-09-13",
+      "manualReviewRequired": true
+    },
+    {
+      "id": "meguro-child-medical",
+      "publication": "published",
+      "number": 5,
+      "name": {
+        "ja": "子ども医療費助成制度",
+        "en": "Meguro Children's Medical Cost Support"
+      },
+      "englishNameKind": "explanatory",
+      "category": "medical",
+      "region": "meguro",
+      "operator": {
+        "ja": "目黒区",
+        "en": "Meguro City"
+      },
+      "status": "ongoing",
+      "checkedAt": "2026-09-13",
+      "nextReview": "2026-10-11",
+      "translationCheckedAt": "2026-09-13",
+      "budget": {
+        "state": "S",
+        "mayCloseEarly": null
+      },
+      "budgetClosed": false,
+      "events": [
+        {
+          "type": "retroactive_claim",
+          "state": "K",
+          "date": null,
+          "note": {
+            "ja": "出生・転入から3か月以内。遅れると遡及できません。",
+            "en": "Within three months of birth or moving in, to retain backdated support."
+          }
+        },
+        {
+          "type": "certificate_renewal",
+          "state": "K",
+          "date": null,
+          "note": {
+            "ja": "毎年10月1日",
+            "en": "Every 1 October"
+          }
+        }
+      ],
+      "amount": {
+        "value": null,
+        "kind": "medical",
+        "state": "K"
+      },
+      "summary": {
+        "ja": "子どもの保険診療でかかった自己負担等を助成します。",
+        "en": "Help with eligible medical costs for children in Meguro. Uninsured services and some costs covered by other programs are excluded."
+      },
+      "benefit": {
+        "ja": "保険診療の自己負担等を助成。自由診療等は対象外。一定の他制度分を控除、単純な全医療費無料とは表示しない",
+        "en": "Help with eligible medical costs for children in Meguro. Uninsured services and some costs covered by other programs are excluded."
+      },
+      "conditions": {
+        "ja": "目黒区に住む、国内の健康保険資格を持つ子どもで、18歳到達後最初の3月31日まで。生活保護・施設等・他制度による助成などに除外や調整があります。",
+        "en": "For children in Meguro with Japanese public health insurance, through the first 31 March after turning 18. Public assistance, certain care arrangements, uninsured treatment and costs covered elsewhere have separate rules."
+      },
+      "apply": {
+        "ja": "オンライン・郵送・窓口で申請します。出生・転入から3か月以内の手続きが遡及のために必要です。",
+        "en": "For children with Japanese public health insurance, through the first 31 March after turning 18. Apply online, by post or at the office."
+      },
+      "documents": {
+        "ja": "申請書、子どもの保険資格情報、本人確認書類。必要な場合は委任状。カードの画像だけでは保険資格の証明になりません。",
+        "en": "Application, the child's health-insurance information and the applicant's ID. A residence card is accepted as photo ID. A copy of the My Number Card alone is not insurance proof."
+      },
+      "caution": {
+        "ja": "保険外診療や他の給付等には対象外の費用があります。保険の種類、医療証の有効期間、年度末の年齢も確認してください。",
+        "en": "Apply within three months of a birth or move to avoid losing backdated support. A photo of a My Number Card alone is not proof of health insurance."
+      },
+      "foreign": {
+        "ja": "公式案内で国籍による除外は確認できませんでした。在留資格の個別条件は公式窓口で確認してください。",
+        "en": "The official guidance we checked does not state a nationality exclusion. Ask the program office about conditions linked to your residence status."
+      },
+      "unknown": {
+        "ja": "申請書類の英語対応は未確認です。国籍・在留資格の個別条件は公式窓口で確認してください。カードや必要書類の詳細は、下記の案内と公式ページをご確認ください。",
+        "en": "We have not confirmed whether application documents can be completed in English. Check any individual nationality or residence-status conditions with the program office. See the document guidance and official page for card requirements and alternatives."
+      },
+      "links": [
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kosodateshien/kosodatekyouiku/kosodate/toha.html",
+          "label": {
+            "ja": "制度・助成範囲",
+            "en": "Official program guidance"
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kosodateshien/kosodatekyouiku/kosodate/shorui.html",
+          "label": {
+            "ja": "申請と代替書類",
+            "en": "Additional official reference"
+          },
+          "verified": true
+        }
+      ],
+      "assessment": {
+        "nationality": {
+          "state": "S",
+          "value": null,
+          "source": "https://www.city.meguro.tokyo.jp/kosodateshien/kosodatekyouiku/kosodate/toha.html"
+        },
+        "residenceStatus": {
+          "state": "S",
+          "value": null,
+          "source": "https://www.city.meguro.tokyo.jp/kosodateshien/kosodatekyouiku/kosodate/toha.html"
+        },
+        "officialEnglish": {
+          "state": "U",
+          "value": null
+        },
+        "applicationLanguage": {
+          "state": "U",
+          "value": null
+        },
+        "myNumberCard": {
+          "state": "K",
+          "value": "alternative_route"
+        },
+        "income": {
+          "state": "S",
+          "value": null
+        },
+        "ageReference": {
+          "state": "K",
+          "value": "see_conditions"
+        }
+      },
+      "sourceSheetRows": [
+        {
+          "key": "stable ID / 掲載",
+          "value": "meguro-child-medical / 採用"
+        },
+        {
+          "key": "英語表示名",
+          "value": "Meguro Children's Medical Cost Support（説明訳）"
+        },
+        {
+          "key": "実施主体／窓口",
+          "value": "K 目黒区／子ども若者課児童手当・医療証係"
+        },
+        {
+          "key": "地域／カテゴリー",
+          "value": "K 目黒区／子育て・医療"
+        },
+        {
+          "key": "状態・開始・終了",
+          "value": "K 常設。暦上の開始・終了S"
+        },
+        {
+          "key": "対象行為期間・別期限",
+          "value": "K 出生・転入から3か月以内の申請で遡及。遅れると遡及できない。医療証の更新は10月1日。給付の対象期間と申請期限を分離"
+        },
+        {
+          "key": "支援・額",
+          "value": "K 保険診療の自己負担等を助成。自由診療等は対象外。一定の他制度分を控除、単純な全医療費無料とは表示しない"
+        },
+        {
+          "key": "年齢／基準日",
+          "value": "K 0歳～18歳到達後最初の3月31日"
+        },
+        {
+          "key": "住民登録・保険",
+          "value": "K 区内在住、国内の健康保険資格が必要。住民登録の特例はU。都外国保組合等は医療証発行と費用請求の扱いを窓口確認"
+        },
+        {
+          "key": "所得／世帯",
+          "value": "所得条件S。K 保護者が申請、別世帯代理人は委任等。世帯年収で機械除外しない"
+        },
+        {
+          "key": "主な除外",
+          "value": "K 生活保護・対象施設・里親等、保険外診療、学校事故共済等の対象費用。例外・他給付との差額は人間確認"
+        },
+        {
+          "key": "カード／代替",
+          "value": "K 必須ではない。健康保険は資格確認書等、本人確認は在留カード・免許証等の代替。カード画像だけでは保険資格証明にならない"
+        },
+        {
+          "key": "申請・書類",
+          "value": "K オンライン／窓口／郵送。申請書・保険資格・本人確認、必要時委任状。保険資料の後日提出案内あり"
+        },
+        {
+          "key": "機械条件",
+          "value": "child_band=0–17、region=meguro、insuranceが国内公的保険→match。19以上→mismatch。18／保険不明／区外→unknown（窓口・基準時点確認）。無保険は資格確認が必要とし受付拒否とはしない"
+        },
+        {
+          "key": "人間確認・注意",
+          "value": "保険種別・施設等・診療対象・年齢境界・医療証有効期間。国籍S、在留S"
+        },
+        {
+          "key": "原典",
+          "value": "[制度・助成範囲](https://www.city.meguro.tokyo.jp/kosodateshien/kosodatekyouiku/kosodate/toha.html)／[申請と代替書類](https://www.city.meguro.tokyo.jp/kosodateshien/kosodatekyouiku/kosodate/shorui.html)"
+        }
+      ],
+      "rulesVersion": "2026-09-13",
+      "manualReviewRequired": true
+    },
+    {
+      "id": "meguro-hearing-aid",
+      "publication": "published",
+      "number": 6,
+      "name": {
+        "ja": "高齢者補聴器購入費助成事業",
+        "en": "Meguro Hearing Aid Purchase Support"
+      },
+      "englishNameKind": "explanatory",
+      "category": "older",
+      "region": "meguro",
+      "operator": {
+        "ja": "目黒区",
+        "en": "Meguro City"
+      },
+      "status": "ongoing",
+      "checkedAt": "2026-09-13",
+      "nextReview": "2026-10-11",
+      "translationCheckedAt": "2026-09-13",
+      "budget": {
+        "state": "S",
+        "mayCloseEarly": null
+      },
+      "budgetClosed": false,
+      "events": [],
+      "amount": {
+        "value": 70000,
+        "kind": "cap",
+        "state": "K"
+      },
+      "summary": {
+        "ja": "事前の確認・助成決定を経て、補聴器の購入費を助成します。",
+        "en": "Help with a hearing aid purchase, up to ¥70,000, once per person."
+      },
+      "benefit": {
+        "ja": "補聴器購入費、1人1回、上限70,000円。実費が下回る場合の端数処理は窓口確認",
+        "en": "Help with a hearing aid purchase, up to ¥70,000, once per person."
+      },
+      "conditions": {
+        "ja": "目黒区内に住む満65歳以上で、本人の住民税が非課税の方。専門医が補聴器の必要性を認め、機器・店舗等の条件を満たす必要があります。",
+        "en": "For Meguro residents aged at least 65 who are personally exempt from resident tax and meet a specialist's assessment. Eligible shops and equipment are required. Purchases before approval, leases and some other grants are excluded."
+      },
+      "apply": {
+        "ja": "区に事前確認を依頼し、医師の証明・見積等を揃えて申請します。助成決定後に購入し、請求してください。",
+        "en": "For Meguro residents aged 65 or over who are exempt from resident tax and meet medical requirements. Ask the ward for a preliminary check before buying."
+      },
+      "documents": {
+        "ja": "助成申請書、医師意見書と聴力図、専門店の見積。購入後に領収書・納品書等が必要です。",
+        "en": "Preliminary check, specialist's statement and hearing test, quotation; after approval and purchase, receipt and delivery note. Ask the office about identity documents."
+      },
+      "caution": {
+        "ja": "決定前の購入やリースは対象外です。他の補装具費の適用、既受給、医師・店舗の要件を確認してください。住民登録や本人確認書類の詳細は窓口へ。",
+        "en": "Medical approval and an eligible specialist shop are required. Purchases made before approval, rentals and leases are not covered."
+      },
+      "foreign": {
+        "ja": "公式案内で国籍による除外は確認できませんでした。在留資格の個別条件は公式窓口で確認してください。",
+        "en": "The official guidance we checked does not state a nationality exclusion. Ask the program office about conditions linked to your residence status."
+      },
+      "unknown": {
+        "ja": "申請書類の英語対応は未確認です。国籍・在留資格の個別条件は公式窓口で確認してください。カードや必要書類の詳細は、下記の案内と公式ページをご確認ください。",
+        "en": "We have not confirmed whether application documents can be completed in English. Check any individual nationality or residence-status conditions with the program office. See the document guidance and official page for card requirements and alternatives."
+      },
+      "links": [
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koureifukushi/kenkoufukushi/koureisha/hochouki.html",
+          "label": {
+            "ja": "区公式：対象・額・手順・書類",
+            "en": "Official program guidance"
+          },
+          "verified": true
+        }
+      ],
+      "assessment": {
+        "nationality": {
+          "state": "S",
+          "value": null,
+          "source": "https://www.city.meguro.tokyo.jp/koureifukushi/kenkoufukushi/koureisha/hochouki.html"
+        },
+        "residenceStatus": {
+          "state": "S",
+          "value": null,
+          "source": "https://www.city.meguro.tokyo.jp/koureifukushi/kenkoufukushi/koureisha/hochouki.html"
+        },
+        "officialEnglish": {
+          "state": "U",
+          "value": null
+        },
+        "applicationLanguage": {
+          "state": "U",
+          "value": null
+        },
+        "myNumberCard": {
+          "state": "U",
+          "value": null
+        },
+        "income": {
+          "state": "K",
+          "value": "office_review"
+        },
+        "ageReference": {
+          "state": "S",
+          "value": null
+        }
+      },
+      "sourceSheetRows": [
+        {
+          "key": "stable ID / 掲載",
+          "value": "meguro-hearing-aid / 採用"
+        },
+        {
+          "key": "英語表示名",
+          "value": "Meguro Hearing Aid Purchase Support（説明訳）"
+        },
+        {
+          "key": "実施主体／窓口",
+          "value": "K 目黒区／高齢福祉課在宅事業係"
+        },
+        {
+          "key": "地域／カテゴリー",
+          "value": "K 目黒区／高齢者・医療"
+        },
+        {
+          "key": "状態・開始・終了",
+          "value": "K 常設。開始・終了の暦日はS。上限改定2026-04-01申請分から"
+        },
+        {
+          "key": "対象行為期間",
+          "value": "K 助成決定後に購入。医師意見書は発行6か月以内。その他請求・購入の固定最終日はU"
+        },
+        {
+          "key": "支援・額",
+          "value": "K 補聴器購入費、1人1回、上限70,000円。実費が下回る場合の端数処理は窓口確認"
+        },
+        {
+          "key": "年齢／基準日",
+          "value": "K 満65歳以上。独立した年齢基準日の明記S、申請時窓口確認"
+        },
+        {
+          "key": "住民登録／所得／世帯",
+          "value": "K 区内在住、本人住民税非課税。世帯全員非課税とは書き換えない。住民票提出の詳細U"
+        },
+        {
+          "key": "その他必須／除外",
+          "value": "K 耳鼻咽喉科専門医の必要性認定、指定要件を満たす機器・専門店。補装具費を受けられる場合等は除外。決定前購入・リースは対象外"
+        },
+        {
+          "key": "カード／代替",
+          "value": "U 必須か・代替書類の全要件は窓口確認。カード不所持で除外しない"
+        },
+        {
+          "key": "申請・書類",
+          "value": "K 事前確認→医師の証明・聴力図→見積→助成申請→決定後購入→請求。申請書・意見書等・見積、購入後領収書・納品書"
+        },
+        {
+          "key": "機械条件",
+          "value": "region=meguro、adult_age≥65、resident_tax=exempt→match。65未満／本人課税→mismatch。年齢・課税不明→unknown。purchase_stage=purchased_before_approvalは当該購入のmismatch"
+        },
+        {
+          "key": "人間確認・注意",
+          "value": "聴力・医学判断・既受給・店舗・機器・申請時点の年齢。診断値は入力させない。国籍S、在留S"
+        },
+        {
+          "key": "原典",
+          "value": "[区公式：対象・額・手順・書類](https://www.city.meguro.tokyo.jp/koureifukushi/kenkoufukushi/koureisha/hochouki.html)"
+        }
+      ],
+      "rulesVersion": "2026-09-13",
+      "manualReviewRequired": true
+    },
+    {
+      "id": "meguro-housing-security-rent",
+      "publication": "held",
+      "number": 7,
+      "name": {
+        "ja": "住居確保給付金（家賃補助）",
+        "en": "Meguro Housing Security Benefit: Rent Support"
+      },
+      "englishNameKind": "explanatory",
+      "category": "housing",
+      "region": "meguro",
+      "operator": {
+        "ja": "国制度・目黒区",
+        "en": "National program / Meguro City"
+      },
+      "status": "ongoing",
+      "checkedAt": "2026-09-13",
+      "nextReview": "2026-10-11",
+      "translationCheckedAt": "2026-09-13",
+      "budget": {
+        "state": "S",
+        "mayCloseEarly": null
+      },
+      "budgetClosed": false,
+      "events": [],
+      "amount": {
+        "value": 53700,
+        "kind": "rent_cap",
+        "state": "K"
+      },
+      "summary": {
+        "ja": "離職や対象となる収入減少時の家賃を、一時的に支援します。",
+        "en": "Temporary help with rent after job loss or an eligible loss of income. The amount depends on rent, household income and other limits."
+      },
+      "benefit": {
+        "ja": "審査後の家賃相当額、世帯・収入別上限。単身上限53,700円／月。最大額を全員の支給額にしない",
+        "en": "Temporary help with rent after job loss or an eligible loss of income. The amount depends on rent, household income and other limits."
+      },
+      "conditions": {
+        "ja": "家賃の支払いが難しくなった方について、離職等・世帯収入・資産・求職等の条件があります。",
+        "en": "Household income, assets, housing risk and work-related requirements need individual assessment. This sheet covers rent, not moving costs or mortgage payments. Previous payments and exceptions require review."
+      },
+      "apply": {
+        "ja": "まず目黒区の生活相談窓口に相談してください。",
+        "en": "Contact Meguro's welfare consultation service first. Income, savings and work-related conditions need an individual check."
+      },
+      "documents": {
+        "ja": "本人確認、離職・減収、収入・資産、家賃関係等の資料。個別の必要書類は窓口が案内します。",
+        "en": "Identity, income, assets, rent and job-loss or reduced-work documents. The consultation office specifies the complete list."
+      },
+      "caution": {
+        "ja": "家賃補助に限定した案内です。転居費用や住宅ローンは別の扱いです。",
+        "en": "This sheet covers rent support, not moving costs or mortgage payments. The maximum payment is not a guaranteed amount."
+      },
+      "foreign": {
+        "ja": "公式案内で国籍による除外は確認できませんでした。在留資格の個別条件は公式窓口で確認してください。",
+        "en": "The official guidance we checked does not state a nationality exclusion. Ask the program office about conditions linked to your residence status."
+      },
+      "unknown": {
+        "ja": "申請書類の英語対応は未確認です。国籍・在留資格の個別条件は公式窓口で確認してください。カードや必要書類の詳細は、下記の案内と公式ページをご確認ください。",
+        "en": "We have not confirmed whether application documents can be completed in English. Check any individual nationality or residence-status conditions with the program office. See the document guidance and official page for card requirements and alternatives."
+      },
+      "links": [
+        {
+          "url": "https://www.city.meguro.tokyo.jp/fukushisougou/kenkoufukushi/seikatsujosei/juukyokakuho.html",
+          "label": {
+            "ja": "区概要：金額・期間",
+            "en": "Official program guidance"
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/documents/4044/shikyuu_yachin.pdf",
+          "label": {
+            "ja": "支給要件",
+            "en": "Additional official reference"
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/documents/4044/checklist.pdf",
+          "label": {
+            "ja": "書類チェックリスト",
+            "en": "Additional official reference"
+          },
+          "verified": true
+        }
+      ],
+      "assessment": {
+        "nationality": {
+          "state": "S",
+          "value": null,
+          "source": "https://www.city.meguro.tokyo.jp/fukushisougou/kenkoufukushi/seikatsujosei/juukyokakuho.html"
+        },
+        "residenceStatus": {
+          "state": "S",
+          "value": null,
+          "source": "https://www.city.meguro.tokyo.jp/fukushisougou/kenkoufukushi/seikatsujosei/juukyokakuho.html"
+        },
+        "officialEnglish": {
+          "state": "U",
+          "value": null
+        },
+        "applicationLanguage": {
+          "state": "U",
+          "value": null
+        },
+        "myNumberCard": {
+          "state": "K",
+          "value": null
+        },
+        "income": {
+          "state": "K",
+          "value": "office_review"
+        },
+        "ageReference": {
+          "state": "S",
+          "value": null
+        }
+      },
+      "sourceSheetRows": [
+        {
+          "key": "stable ID / 掲載",
+          "value": "meguro-housing-security-rent / 第一版保留（12シート中、非掲載）"
+        },
+        {
+          "key": "英語表示名",
+          "value": "Meguro Housing Security Benefit: Rent Support（説明訳）"
+        },
+        {
+          "key": "実施主体／窓口",
+          "value": "K 国制度・目黒区／福祉総合課の生活相談窓口"
+        },
+        {
+          "key": "地域／カテゴリー",
+          "value": "目黒区での申請案内に限定／住宅・低所得"
+        },
+        {
+          "key": "状態・開始・終了",
+          "value": "K 常設。開始・終了暦日S。非掲載は制度終了ではない"
+        },
+        {
+          "key": "対象行為期間",
+          "value": "K 離職等から原則2年以内、所定事情で延長例外。支給原則3か月、条件付き延長最大9か月。受付終了日ではない"
+        },
+        {
+          "key": "支援・額",
+          "value": "K 審査後の家賃相当額、世帯・収入別上限。単身上限53,700円／月。最大額を全員の支給額にしない"
+        },
+        {
+          "key": "年齢／基準日",
+          "value": "S 固定年齢制限の記載なし。就労等の条件と切り離して無制限としない"
+        },
+        {
+          "key": "住民登録／所得／世帯",
+          "value": "K 住居喪失又はそのおそれ、世帯収入・金融資産・生計維持条件。住居喪失者に現住民登録なしだけで不一致としない"
+        },
+        {
+          "key": "その他必須／除外",
+          "value": "K 離職等または本人都合によらない就業機会減少、活動条件、過去受給・暴力団員等の除外。例外審査あり"
+        },
+        {
+          "key": "カード／代替",
+          "value": "K 本人確認に免許証・旅券等の代替案内。カードを一律必須にしない"
+        },
+        {
+          "key": "申請・書類",
+          "value": "K まず相談。本人確認、離職／減収、収入・資産、家賃関係等の資料。書類の個別指定は窓口"
+        },
+        {
+          "key": "機械条件",
+          "value": "support_scope=rentかつhousing=rental→match。owner_mortgageのみの相談→当該家賃補助とのmismatch。他入力だけで受給を判定しない"
+        },
+        {
+          "key": "人間確認・注意",
+          "value": "所得・収入・資産・世帯・住居喪失・活動・再受給・在留の事情。転居費用補助は本シート外。国籍S、在留S"
+        },
+        {
+          "key": "原典",
+          "value": "[区概要：金額・期間](https://www.city.meguro.tokyo.jp/fukushisougou/kenkoufukushi/seikatsujosei/juukyokakuho.html)／[支給要件](https://www.city.meguro.tokyo.jp/documents/4044/shikyuu_yachin.pdf)／[書類チェックリスト](https://www.city.meguro.tokyo.jp/documents/4044/checklist.pdf)"
+        }
+      ],
+      "rulesVersion": "2026-09-13",
+      "manualReviewRequired": true
+    },
+    {
+      "id": "tokyo-marusho",
+      "publication": "held",
+      "number": 8,
+      "name": {
+        "ja": "心身障害者・心身障害児医療費助成（マル障）",
+        "en": "Tokyo Medical Cost Support for Severe Disabilities"
+      },
+      "englishNameKind": "explanatory",
+      "category": "medical",
+      "region": "meguro",
+      "operator": {
+        "ja": "東京都",
+        "en": "Tokyo Metropolitan Government"
+      },
+      "status": "ongoing",
+      "checkedAt": "2026-09-13",
+      "nextReview": "2026-10-11",
+      "translationCheckedAt": "2026-09-13",
+      "budget": {
+        "state": "S",
+        "mayCloseEarly": null
+      },
+      "budgetClosed": false,
+      "events": [
+        {
+          "type": "certificate_renewal",
+          "state": "K",
+          "date": null,
+          "note": {
+            "ja": "毎年9月1日",
+            "en": "Every 1 September"
+          }
+        }
+      ],
+      "amount": {
+        "value": null,
+        "kind": "medical",
+        "state": "K"
+      },
+      "summary": {
+        "ja": "対象の障害要件を満たす方の保険診療費を助成します。",
+        "en": "Help with eligible insured medical costs for people who meet specified disability requirements. Some co-payments may remain."
+      },
+      "benefit": {
+        "ja": "対象医療の自己負担を一部助成。課税状況等で本人負担あり。入院時食事等は対象外",
+        "en": "Help with eligible insured medical costs for people who meet specified disability requirements. Some co-payments may remain."
+      },
+      "conditions": {
+        "ja": "対象の障害要件と健康保険加入、所得等の条件があります。65歳前後の条件には例外があります。",
+        "en": "Specified disability certification, health insurance, income and age-related exceptions apply. Being 65 or over is not an automatic exclusion. The ward's September 2026 income table is the current reference; no income or disability calculation is made here."
+      },
+      "apply": {
+        "ja": "新規申請は目黒区障害者支援課へお問い合わせください。",
+        "en": "Contact Meguro's disability support office for a new application. Insurance, income, disability certification and age-related exceptions need review."
+      },
+      "documents": {
+        "ja": "対象手帳・保険・所得等を確認します。新規の書類一式とカード要否は窓口へご確認ください。",
+        "en": "Ask Meguro's disability support office for the new-application document list. Disability certification, insurance and income are checked."
+      },
+      "caution": {
+        "ja": "障害の程度や所得、年齢例外はここでは判定しません。",
+        "en": "Being 65 or over does not automatically rule you out. This tool does not assess disability grades or calculate eligible income."
+      },
+      "foreign": {
+        "ja": "公式案内で国籍による除外は確認できませんでした。在留資格の個別条件は公式窓口で確認してください。",
+        "en": "The official guidance we checked does not state a nationality exclusion. Ask the program office about conditions linked to your residence status."
+      },
+      "unknown": {
+        "ja": "申請書類の英語対応は未確認です。国籍・在留資格の個別条件は公式窓口で確認してください。カードや必要書類の詳細は、下記の案内と公式ページをご確認ください。",
+        "en": "We have not confirmed whether application documents can be completed in English. Check any individual nationality or residence-status conditions with the program office. See the document guidance and official page for card requirements and alternatives."
+      },
+      "links": [
+        {
+          "url": "https://www.city.meguro.tokyo.jp/shougaishien/kenkoufukushi/shougaisha/marusho.html",
+          "label": {
+            "ja": "目黒区：2026年8月更新・9月適用所得表等",
+            "en": "Official program guidance"
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.fukushi.metro.tokyo.lg.jp/seikatsu/josei/marusyo",
+          "label": {
+            "ja": "東京都の追加参照先（今回本文取得失敗・根拠には未採用）",
+            "en": "Additional official reference"
+          },
+          "verified": false
+        }
+      ],
+      "assessment": {
+        "nationality": {
+          "state": "S",
+          "value": null,
+          "source": "https://www.city.meguro.tokyo.jp/shougaishien/kenkoufukushi/shougaisha/marusho.html"
+        },
+        "residenceStatus": {
+          "state": "S",
+          "value": null,
+          "source": "https://www.city.meguro.tokyo.jp/shougaishien/kenkoufukushi/shougaisha/marusho.html"
+        },
+        "officialEnglish": {
+          "state": "U",
+          "value": null
+        },
+        "applicationLanguage": {
+          "state": "U",
+          "value": null
+        },
+        "myNumberCard": {
+          "state": "U",
+          "value": null
+        },
+        "income": {
+          "state": "K",
+          "value": "office_review"
+        },
+        "ageReference": {
+          "state": "K",
+          "value": "see_conditions"
+        }
+      },
+      "sourceSheetRows": [
+        {
+          "key": "stable ID / 掲載",
+          "value": "tokyo-marusho / 第一版保留（12シート中、非掲載）"
+        },
+        {
+          "key": "英語表示名",
+          "value": "Tokyo Medical Cost Support for Severe Disabilities（説明訳）"
+        },
+        {
+          "key": "実施主体／窓口",
+          "value": "K 東京都制度／目黒区障害者支援課支援サービス係"
+        },
+        {
+          "key": "地域／カテゴリー",
+          "value": "東京都制度の目黒区窓口案内／障害・医療"
+        },
+        {
+          "key": "状態・開始・終了",
+          "value": "K 常設。開始・終了暦日S。受給者証更新9月1日、受付締切ではない"
+        },
+        {
+          "key": "対象行為期間",
+          "value": "K 保険診療の助成。資格発効日・遡及の個別扱いU"
+        },
+        {
+          "key": "支援・額",
+          "value": "K 対象医療の自己負担を一部助成。課税状況等で本人負担あり。入院時食事等は対象外"
+        },
+        {
+          "key": "年齢／基準日",
+          "value": "K 65歳前の障害該当・申請に関する除外と例外あり。65歳以上を一律除外しない"
+        },
+        {
+          "key": "住民登録・保険",
+          "value": "K 東京都の制度、健康保険加入が必要。目黒区窓口で住所・適用開始を確認"
+        },
+        {
+          "key": "所得／世帯",
+          "value": "K 2026-09-01からの新所得表を区公式で確認。本人所得が原則、20歳未満は原則世帯主。控除・扶養加算を含むため計算しない"
+        },
+        {
+          "key": "その他必須／除外",
+          "value": "K 対象手帳の等級等、生活保護等・高齢加入条件等の除外。手帳の種類と等級の例外判定は窓口"
+        },
+        {
+          "key": "カード／代替",
+          "value": "更新時の保険情報に資格確認書等の代替K。新規申請におけるカード要否・全書類はU"
+        },
+        {
+          "key": "申請・書類",
+          "value": "K 新規は障害者支援課へ問い合わせ。対象手帳・保険・所得等の確認内容はK、具体的な新規書類一式U"
+        },
+        {
+          "key": "機械条件",
+          "value": "region=meguroかつinsuranceが国内公的保険→match。insurance=not_enrolledは現在の保険加入条件mismatch（将来加入後は別評価）。年齢・等級・課税で自動排除しない"
+        },
+        {
+          "key": "人間確認・注意",
+          "value": "全医学・等級・所得・年齢例外。国籍S、在留S。今回区本文の最新版で旧所得表の懸念を解消。都URLの取得失敗は制度の不存在や404とはしない"
+        },
+        {
+          "key": "原典",
+          "value": "[目黒区：2026年8月更新・9月適用所得表等](https://www.city.meguro.tokyo.jp/shougaishien/kenkoufukushi/shougaisha/marusho.html)／[東京都の追加参照先（今回本文取得失敗・根拠には未採用）](https://www.fukushi.metro.tokyo.lg.jp/seikatsu/josei/marusyo)"
+        }
+      ],
+      "rulesVersion": "2026-09-13",
+      "manualReviewRequired": true
+    },
+    {
+      "id": "meguro-mental-outpatient",
+      "publication": "published",
+      "number": 9,
+      "name": {
+        "ja": "自立支援医療制度（精神通院）",
+        "en": "Support for Ongoing Outpatient Mental Health Care"
+      },
+      "englishNameKind": "explanatory",
+      "category": "medical",
+      "region": "meguro",
+      "operator": {
+        "ja": "東京都・目黒区窓口",
+        "en": "Tokyo Metropolitan Government / Meguro application office"
+      },
+      "status": "ongoing",
+      "checkedAt": "2026-09-13",
+      "nextReview": "2026-10-11",
+      "translationCheckedAt": "2026-09-13",
+      "budget": {
+        "state": "S",
+        "mayCloseEarly": null
+      },
+      "budgetClosed": false,
+      "events": [],
+      "amount": {
+        "value": 10,
+        "kind": "copay",
+        "state": "K"
+      },
+      "summary": {
+        "ja": "継続する対象の精神通院医療について、自己負担を軽減します。",
+        "en": "Reduced charges for eligible ongoing outpatient mental health care. The standard co-payment is 10%, with limits based on individual circumstances."
+      },
+      "benefit": {
+        "ja": "原則医療費1割の本人負担、所得・疾病等で月額上限。入院費への支援として表示しない",
+        "en": "Reduced charges for eligible ongoing outpatient mental health care. The standard co-payment is 10%, with limits based on individual circumstances."
+      },
+      "conditions": {
+        "ja": "継続する対象の精神通院が必要な方で、年齢制限はありません。指定医療機関の利用と医学的な確認が必要です。所得判定の世帯は健康保険上の区分です。",
+        "en": "There is no age limit. A medical assessment and designated provider are needed. The assessment household follows health-insurance membership, not necessarily residence records. This does not cover inpatient-only care."
+      },
+      "apply": {
+        "ja": "目黒区保健予防課で申請します。郵送希望の場合は事前にご相談ください。",
+        "en": "There is no age limit. A medical assessment and a designated provider are required. Apply at the ward office, or ask about applying by post."
+      },
+      "documents": {
+        "ja": "申請書・診断書・保険情報、必要な場合は所得資料。マイナンバーカード等を持っていない場合でも申請可能との案内があります。",
+        "en": "Application, medical statement, insurance information and income documents where required. The guidance allows applications even without a My Number Card or number document."
+      },
+      "caution": {
+        "ja": "入院だけの医療費支援ではありません。対象の診療、医療機関、月額上限、受給者証の期限は公式窓口で確認してください。",
+        "en": "This is not inpatient support. The household used for assessment is based on health insurance."
+      },
+      "foreign": {
+        "ja": "公式案内で国籍による除外は確認できませんでした。在留資格の個別条件は公式窓口で確認してください。",
+        "en": "The official guidance we checked does not state a nationality exclusion. Ask the program office about conditions linked to your residence status."
+      },
+      "unknown": {
+        "ja": "申請書類の英語対応は未確認です。国籍・在留資格の個別条件は公式窓口で確認してください。カードや必要書類の詳細は、下記の案内と公式ページをご確認ください。",
+        "en": "We have not confirmed whether application documents can be completed in English. Check any individual nationality or residence-status conditions with the program office. See the document guidance and official page for card requirements and alternatives."
+      },
+      "links": [
+        {
+          "url": "https://www.city.meguro.tokyo.jp/hokenyobou/kenkoufukushi/iryou/seishin.html",
+          "label": {
+            "ja": "区公式：対象・申請・カードなし申請",
+            "en": "Official program guidance"
+          },
+          "verified": true
+        }
+      ],
+      "assessment": {
+        "nationality": {
+          "state": "S",
+          "value": null,
+          "source": "https://www.city.meguro.tokyo.jp/hokenyobou/kenkoufukushi/iryou/seishin.html"
+        },
+        "residenceStatus": {
+          "state": "S",
+          "value": null,
+          "source": "https://www.city.meguro.tokyo.jp/hokenyobou/kenkoufukushi/iryou/seishin.html"
+        },
+        "officialEnglish": {
+          "state": "U",
+          "value": null
+        },
+        "applicationLanguage": {
+          "state": "U",
+          "value": null
+        },
+        "myNumberCard": {
+          "state": "K",
+          "value": "alternative_route"
+        },
+        "income": {
+          "state": "K",
+          "value": "office_review"
+        },
+        "ageReference": {
+          "state": "X",
+          "value": null
+        }
+      },
+      "sourceSheetRows": [
+        {
+          "key": "stable ID / 掲載",
+          "value": "meguro-mental-outpatient / 採用"
+        },
+        {
+          "key": "英語表示名",
+          "value": "Support for Ongoing Outpatient Mental Health Care（説明訳）"
+        },
+        {
+          "key": "実施主体／窓口",
+          "value": "K 国の制度・東京都／目黒区保健予防課"
+        },
+        {
+          "key": "地域／カテゴリー",
+          "value": "目黒区申請案内に限定／医療・障害"
+        },
+        {
+          "key": "状態・開始・終了",
+          "value": "K 常設。開始・終了暦日S"
+        },
+        {
+          "key": "対象行為期間",
+          "value": "K 継続した対象通院。受給者証の有効期間・更新時期は個別確認U"
+        },
+        {
+          "key": "支援・額",
+          "value": "K 原則医療費1割の本人負担、所得・疾病等で月額上限。入院費への支援として表示しない"
+        },
+        {
+          "key": "年齢／基準日",
+          "value": "N 年齢制限なし／年齢基準日はX"
+        },
+        {
+          "key": "住民登録",
+          "value": "目黒区窓口で手続きする案内K。厳密な登録基準日・例外はU"
+        },
+        {
+          "key": "所得／世帯",
+          "value": "K 医療保険上の同一世帯で所得等を確認。住民票上の世帯と同一と仮定しない"
+        },
+        {
+          "key": "その他必須／除外",
+          "value": "K 継続する対象精神通院・指定医療機関。対象疾病・診療の医学的判断が必要。入院だけの支援は本制度外"
+        },
+        {
+          "key": "カード／代替",
+          "value": "K カード又は番号のわかるものを案内するが、所持していなくても申請可能との明示あり"
+        },
+        {
+          "key": "申請・書類",
+          "value": "K 窓口、事前相談のうえ郵送。申請書・診断書・保険情報・必要時所得資料等。ナビでは診断書や病名を収集しない"
+        },
+        {
+          "key": "機械条件",
+          "value": "support_scope=mental_outpatient→match、inpatient_only→mismatch。それ以外／未回答→unknown。年齢・カードなしでは除外しない"
+        },
+        {
+          "key": "人間確認・注意",
+          "value": "医学判断、指定先、所得上限、保険上世帯、代理、資格期限。国籍S、在留S。旧保険証の案内をナビの必須持参物として再現せず、現行資格確認書等を案内"
+        },
+        {
+          "key": "原典",
+          "value": "[区公式：対象・申請・カードなし申請](https://www.city.meguro.tokyo.jp/hokenyobou/kenkoufukushi/iryou/seishin.html)"
+        }
+      ],
+      "rulesVersion": "2026-09-13",
+      "manualReviewRequired": true
+    },
+    {
+      "id": "meguro-nhi-flat-rate-reduction",
+      "publication": "published",
+      "number": 10,
+      "name": {
+        "ja": "国民健康保険料の均等割額の軽減",
+        "en": "Meguro National Health Insurance Flat-Rate Premium Reduction"
+      },
+      "englishNameKind": "explanatory",
+      "category": "income",
+      "region": "meguro",
+      "operator": {
+        "ja": "目黒区",
+        "en": "Meguro City"
+      },
+      "status": "ongoing",
+      "checkedAt": "2026-09-13",
+      "nextReview": "2026-10-11",
+      "translationCheckedAt": "2026-09-13",
+      "budget": {
+        "state": "S",
+        "mayCloseEarly": null
+      },
+      "budgetClosed": false,
+      "events": [],
+      "amount": {
+        "value": [
+          70,
+          50,
+          20
+        ],
+        "kind": "reduction",
+        "state": "K"
+      },
+      "summary": {
+        "ja": "世帯の所得条件に応じて、国保の均等割額を軽減します。",
+        "en": "A 70%, 50% or 20% reduction in the flat-rate part of Meguro National Health Insurance premiums, based on household income."
+      },
+      "benefit": {
+        "ja": "均等割額を70%・50%・20%軽減。保険料全体の同率軽減ではない",
+        "en": "A 70%, 50% or 20% reduction in the flat-rate part of Meguro National Health Insurance premiums, based on household income."
+      },
+      "conditions": {
+        "ja": "目黒区の国民健康保険に加入する世帯が対象です。前年の世帯所得等を判定し、国保に入っていない世帯主等の所得も含む場合があります。",
+        "en": "For Meguro National Health Insurance households. Previous-year household income, including specified household members, is assessed at the annual or joining-date reference point. Resident-tax exemption alone does not determine the rate."
+      },
+      "apply": {
+        "ja": "所得情報が確認できれば区が自動判定します。未申告の場合は所得の申告についてご確認ください。",
+        "en": "For households covered by Meguro National Health Insurance. The ward checks eligibility when income information is available. Check whether you need to report your income, even if it was zero."
+      },
+      "documents": {
+        "ja": "必要な所得・税の申告資料は状況により異なります。無収入でも申告が必要か窓口へ確認してください。",
+        "en": "The ward assesses recorded income. If income has not been reported, check the required tax or income declaration with the office."
+      },
+      "caution": {
+        "ja": "住民税非課税だけでは軽減率を決められません。均等割の軽減であり、保険料全体が同じ割合で減るわけではありません。",
+        "en": "This does not reduce the entire premium by the same percentage. Resident-tax exemption alone does not establish eligibility."
+      },
+      "foreign": {
+        "ja": "公式案内で国籍による除外は確認できませんでした。在留資格の個別条件は公式窓口で確認してください。",
+        "en": "The official guidance we checked does not state a nationality exclusion. Ask the program office about conditions linked to your residence status."
+      },
+      "unknown": {
+        "ja": "申請書類の英語対応は未確認です。国籍・在留資格の個別条件は公式窓口で確認してください。カードや必要書類の詳細は、下記の案内と公式ページをご確認ください。",
+        "en": "We have not confirmed whether application documents can be completed in English. Check any individual nationality or residence-status conditions with the program office. See the document guidance and official page for card requirements and alternatives."
+      },
+      "links": [
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kokuho/kurashi/kokuho/hokenryo_keigen.html",
+          "label": {
+            "ja": "区公式：均等割軽減・年度所得条件",
+            "en": "Official program guidance"
+          },
+          "verified": true
+        }
+      ],
+      "assessment": {
+        "nationality": {
+          "state": "S",
+          "value": null,
+          "source": "https://www.city.meguro.tokyo.jp/kokuho/kurashi/kokuho/hokenryo_keigen.html"
+        },
+        "residenceStatus": {
+          "state": "S",
+          "value": null,
+          "source": "https://www.city.meguro.tokyo.jp/kokuho/kurashi/kokuho/hokenryo_keigen.html"
+        },
+        "officialEnglish": {
+          "state": "U",
+          "value": null
+        },
+        "applicationLanguage": {
+          "state": "U",
+          "value": null
+        },
+        "myNumberCard": {
+          "state": "S",
+          "value": null
+        },
+        "income": {
+          "state": "K",
+          "value": "office_review"
+        },
+        "ageReference": {
+          "state": "S",
+          "value": null
+        }
+      },
+      "sourceSheetRows": [
+        {
+          "key": "stable ID / 掲載",
+          "value": "meguro-nhi-flat-rate-reduction / 採用"
+        },
+        {
+          "key": "英語表示名",
+          "value": "Meguro National Health Insurance Flat-Rate Premium Reduction（説明訳）"
+        },
+        {
+          "key": "実施主体／窓口",
+          "value": "K 目黒区／国保年金課"
+        },
+        {
+          "key": "地域／カテゴリー",
+          "value": "K 目黒区国保加入世帯／低所得・保険"
+        },
+        {
+          "key": "状態・開始・終了",
+          "value": "K 常設・年度基準。開始・終了暦日S"
+        },
+        {
+          "key": "対象行為期間／基準",
+          "value": "K 前年所得。原則毎年4月1日、年度途中の新規世帯は加入日等。2026年度を別版管理"
+        },
+        {
+          "key": "支援・額",
+          "value": "K 均等割額を70%・50%・20%軽減。保険料全体の同率軽減ではない"
+        },
+        {
+          "key": "年齢／基準日",
+          "value": "S この低所得軽減独自の年齢制限記載なし。国保加入要件・別の未就学児軽減を混ぜない"
+        },
+        {
+          "key": "住民登録・保険",
+          "value": "K 目黒区国保加入。転居・世帯異動時の基準は窓口確認"
+        },
+        {
+          "key": "所得／世帯",
+          "value": "K 世帯の前年総所得金額等。国保未加入の世帯主等も含む。住民税非課税と同義ではない"
+        },
+        {
+          "key": "その他必須／除外",
+          "value": "K 所得確認が必要、所得未申告のままでは正しく判定できない。勤務先の健康保険料は本制度外"
+        },
+        {
+          "key": "カード／代替",
+          "value": "独立した軽減申請に必須カードの記載S。所得申告の本人確認・代替方法はU"
+        },
+        {
+          "key": "申請・書類",
+          "value": "K 所得が確認できれば区が自動判定。未申告は確定申告・住民税申告等。無収入の場合も申告案内を確認。個別申告書類は窓口"
+        },
+        {
+          "key": "機械条件",
+          "value": "insurance=meguro_nhi→match。他の日本の健康保険→mismatch（目黒区国保の軽減ではない）。不明→unknown。本人非課税のみで軽減率は決めない"
+        },
+        {
+          "key": "人間確認・注意",
+          "value": "所得・加入・世帯・年金等の特則、申告済みか。国籍S、在留S。ナビは国保加入資格を判定しない"
+        },
+        {
+          "key": "原典",
+          "value": "[区公式：均等割軽減・年度所得条件](https://www.city.meguro.tokyo.jp/kokuho/kurashi/kokuho/hokenryo_keigen.html)"
+        }
+      ],
+      "rulesVersion": "2026-09-13",
+      "manualReviewRequired": true
+    },
+    {
+      "id": "meguro-school-expense-support",
+      "publication": "published",
+      "number": 11,
+      "name": {
+        "ja": "就学援助制度",
+        "en": "Meguro School Expense Support"
+      },
+      "englishNameKind": "explanatory",
+      "category": "children",
+      "region": "meguro",
+      "operator": {
+        "ja": "目黒区",
+        "en": "Meguro City"
+      },
+      "status": "open",
+      "checkedAt": "2026-09-13",
+      "nextReview": "2026-09-20",
+      "translationCheckedAt": "2026-09-13",
+      "budget": {
+        "state": "S",
+        "mayCloseEarly": null
+      },
+      "budgetClosed": false,
+      "events": [
+        {
+          "type": "application_window",
+          "state": "K",
+          "start": null,
+          "startState": "U",
+          "startTime": null,
+          "end": "2027-02-26",
+          "endTime": null
+        }
+      ],
+      "amount": {
+        "value": null,
+        "kind": "school",
+        "state": "K"
+      },
+      "summary": {
+        "ja": "対象の学校に通う子どもの学用品や行事などの費用を支援します。",
+        "en": "Help with some school expenses for eligible families in Meguro. Amounts depend on approved costs and circumstances."
+      },
+      "benefit": {
+        "ja": "学用品・旅行等の費用の一部。認定通知の支給予定表等で確認。全費用支給・一律額としない",
+        "en": "Help with some school expenses for eligible families in Meguro. Amounts depend on approved costs and circumstances."
+      },
+      "conditions": {
+        "ja": "目黒区に住み、対象の国公立小中学校等に通う子どもの家庭。所得や受給状況などの条件があります。私立・インターナショナル・特別支援学校は、この制度の対象外です。",
+        "en": "For Meguro residents attending eligible public elementary or junior high schools. Private, international and special-needs schools are outside this program. Household-income rules, benefit-based grounds and exceptional income loss need checking."
+      },
+      "apply": {
+        "ja": "オンライン・郵送・持参で申請できます。現在は期限後申請の取扱いとなり、最終受付日までの到着・送信完了が必要です。",
+        "en": "For children attending eligible public elementary or junior high schools. Apply online, by post or at the office, with any required supporting documents."
+      },
+      "documents": {
+        "ja": "年度の申請書、保護者名義の口座資料。必要に応じて申請理由や世帯所得の証明を添付します。",
+        "en": "Annual application, guardian's bank details and evidence of the qualifying reason or income where required."
+      },
+      "caution": {
+        "ja": "転入後の期限や急な収入減少の例外は窓口へご確認ください。対象外の学校にも別の支援がないか相談できます。",
+        "en": "The final deadline is 26 February 2027. Late applications may receive less support. Private, international and special-needs schools are outside this particular program."
+      },
+      "foreign": {
+        "ja": "公式案内で国籍による除外は確認できませんでした。在留資格の個別条件は公式窓口で確認してください。",
+        "en": "The official guidance we checked does not state a nationality exclusion. Ask the program office about conditions linked to your residence status."
+      },
+      "unknown": {
+        "ja": "申請書類の英語対応は未確認です。国籍・在留資格の個別条件は公式窓口で確認してください。カードや必要書類の詳細は、下記の案内と公式ページをご確認ください。",
+        "en": "We have not confirmed whether application documents can be completed in English. Check any individual nationality or residence-status conditions with the program office. See the document guidance and official page for card requirements and alternatives."
+      },
+      "links": [
+        {
+          "url": "https://www.city.meguro.tokyo.jp/gakkouunei/kosodatekyouiku/gakkoukyouiku/gimu.html",
+          "label": {
+            "ja": "区公式：対象・書類・最終期限",
+            "en": "Official program guidance"
+          },
+          "verified": true
+        }
+      ],
+      "assessment": {
+        "nationality": {
+          "state": "S",
+          "value": null,
+          "source": "https://www.city.meguro.tokyo.jp/gakkouunei/kosodatekyouiku/gakkoukyouiku/gimu.html"
+        },
+        "residenceStatus": {
+          "state": "S",
+          "value": null,
+          "source": "https://www.city.meguro.tokyo.jp/gakkouunei/kosodatekyouiku/gakkoukyouiku/gimu.html"
+        },
+        "officialEnglish": {
+          "state": "U",
+          "value": null
+        },
+        "applicationLanguage": {
+          "state": "U",
+          "value": null
+        },
+        "myNumberCard": {
+          "state": "K",
+          "value": "alternative_route"
+        },
+        "income": {
+          "state": "K",
+          "value": "office_review"
+        },
+        "ageReference": {
+          "state": "X",
+          "value": null
+        }
+      },
+      "sourceSheetRows": [
+        {
+          "key": "stable ID / 掲載",
+          "value": "meguro-school-expense-support / 採用"
+        },
+        {
+          "key": "英語表示名",
+          "value": "Meguro School Expense Support（説明訳）"
+        },
+        {
+          "key": "実施主体／窓口",
+          "value": "K 目黒区／教育委員会事務局学校運営課学事係"
+        },
+        {
+          "key": "地域／カテゴリー",
+          "value": "K 目黒区／子育て・教育・低所得"
+        },
+        {
+          "key": "状態・開始・終了",
+          "value": "K 2026年度受付中（期限後申請枠）。受付開始日U。最終受付2027-02-26、到着／送信完了必要。時刻U"
+        },
+        {
+          "key": "対象行為期間・別期限",
+          "value": "K 年度分。通常5月29日、7月17日までの扱いは経過済み。現在は申請月からで減額。転入日から1か月以内の別条件あり"
+        },
+        {
+          "key": "支援・額",
+          "value": "K 学用品・旅行等の費用の一部。認定通知の支給予定表等で確認。全費用支給・一律額としない"
+        },
+        {
+          "key": "年齢／基準日",
+          "value": "K 国公立小中学校等の在学区分で判定。満年齢だけで学校種別を決めない／年齢基準日はX"
+        },
+        {
+          "key": "住民登録",
+          "value": "K 区内在住。登録の特例U"
+        },
+        {
+          "key": "所得／世帯",
+          "value": "K 前年所得や給付・減免・災害等の認定理由。世帯は前年末の生計同一家族等。急減時相談あり、厳密な自動所得判定なし"
+        },
+        {
+          "key": "その他必須／除外",
+          "value": "K 国公立小中学校等。私立・インターナショナル・特別支援学校は当該制度対象外。他の支援の不存在を意味しない"
+        },
+        {
+          "key": "カード／代替",
+          "value": "K 郵送・持参経路あり。オンラインの認証要件はU、カード不所持で制度自体を除外しない"
+        },
+        {
+          "key": "申請・書類",
+          "value": "K オンライン／郵送／持参。年度申請書、口座写し、必要時認定理由・所得の証明"
+        },
+        {
+          "key": "機械条件",
+          "value": "region=meguro、school_type=public_compulsory→match。private/international/special_needs→mismatch（本制度）。不明→unknown。所得非課税だけで合格にしない"
+        },
+        {
+          "key": "人間確認・注意",
+          "value": "所得年度・世帯・例外・対象費用・転入期限。国籍S、在留S。本文の一部曜日表記等を自動複製せず日付と最終期限を採用"
+        },
+        {
+          "key": "原典",
+          "value": "[区公式：対象・書類・最終期限](https://www.city.meguro.tokyo.jp/gakkouunei/kosodatekyouiku/gakkoukyouiku/gimu.html)"
+        }
+      ],
+      "rulesVersion": "2026-09-13",
+      "manualReviewRequired": true
+    },
+    {
+      "id": "meguro-home-energy-equipment",
+      "publication": "published",
+      "number": 12,
+      "name": {
+        "ja": "住宅用再生可能エネルギー及び省エネルギー設備設置費助成",
+        "en": "Meguro Home Energy Equipment Grant"
+      },
+      "englishNameKind": "explanatory",
+      "category": "energy",
+      "region": "meguro",
+      "operator": {
+        "ja": "目黒区",
+        "en": "Meguro City"
+      },
+      "status": "open",
+      "checkedAt": "2026-09-13",
+      "nextReview": "2026-09-20",
+      "translationCheckedAt": "2026-09-13",
+      "budget": {
+        "state": "K",
+        "mayCloseEarly": true
+      },
+      "budgetClosed": false,
+      "events": [
+        {
+          "type": "application_window",
+          "state": "K",
+          "start": "2026-06-01",
+          "startState": "K",
+          "startTime": null,
+          "end": "2027-01-29",
+          "endTime": null
+        },
+        {
+          "type": "installation_handover",
+          "state": "K",
+          "start": "2026-01-01",
+          "end": "2026-12-31"
+        }
+      ],
+      "amount": {
+        "value": null,
+        "kind": "equipment",
+        "state": "K",
+        "components": [
+          {
+            "label": {
+              "ja": "太陽光",
+              "en": "Solar"
+            },
+            "value": 30000,
+            "unit": "per_kw",
+            "cap": 150000
+          },
+          {
+            "label": {
+              "ja": "蓄電池",
+              "en": "Battery"
+            },
+            "value": 0.3333333333333333,
+            "unit": "fraction",
+            "cap": 70000
+          },
+          {
+            "label": {
+              "ja": "燃料電池",
+              "en": "Fuel cell"
+            },
+            "value": 70000,
+            "unit": "yen"
+          },
+          {
+            "label": {
+              "ja": "対象給湯器",
+              "en": "Eligible water heater"
+            },
+            "value": 50000,
+            "unit": "yen"
+          }
+        ]
+      },
+      "summary": {
+        "ja": "自宅に設置する対象の再エネ・省エネ設備の費用を助成します。",
+        "en": "A grant for eligible home energy equipment installed at your registered home in Meguro. Amounts depend on the equipment."
+      },
+      "benefit": {
+        "ja": "太陽光3万円/kW・上限15万円、蓄電池本体1/3以内・上限7万円、燃料電池7万円、対象給湯器5万円。詳細丸め・併用は計算しない",
+        "en": "A grant for eligible home energy equipment installed at your registered home in Meguro. Amounts depend on the equipment."
+      },
+      "conditions": {
+        "ja": "対象設備を設置した区内住宅に住み、住民登録がある方。前年度の住民税滞納がないこと、新品・自己負担・設備や既助成の条件等が必要です。",
+        "en": "Live and be registered at the installation address. New equipment, payment, tax-arrears, previous-grant and equipment rules apply. Renters are not automatically excluded. This version excludes association, shared-LED and eco-home categories."
+      },
+      "apply": {
+        "ja": "設置・引渡し後、必要書類を揃えてオンラインで申請します。紙での提出は窓口に確認してください。",
+        "en": "Complete installation and handover during 2026. Apply after installation, with all documents, by 29 January 2027. Check the equipment and tax-payment conditions first."
+      },
+      "documents": {
+        "ja": "申請・振込先、領収書と内訳、設備の仕様・保証等。住宅所有者が異なる場合は同意等が必要です。",
+        "en": "Application and payment details, itemized receipts, specifications and warranty information; owner's consent where the owner is different. Check equipment-specific documents."
+      },
+      "caution": {
+        "ja": "設置・引渡期間と申請期限は別です。賃貸というだけでは対象外になりません。設備要件、税、過去の助成、他の補助との併用をご確認ください。",
+        "en": "Funding may run out early. Tenants should check the owner's consent requirements. A rental home is not automatically excluded."
+      },
+      "foreign": {
+        "ja": "公式案内で国籍による除外は確認できませんでした。在留資格の個別条件は公式窓口で確認してください。",
+        "en": "The official guidance we checked does not state a nationality exclusion. Ask the program office about conditions linked to your residence status."
+      },
+      "unknown": {
+        "ja": "申請書類の英語対応は未確認です。国籍・在留資格の個別条件は公式窓口で確認してください。カードや必要書類の詳細は、下記の案内と公式ページをご確認ください。",
+        "en": "We have not confirmed whether application documents can be completed in English. Check any individual nationality or residence-status conditions with the program office. See the document guidance and official page for card requirements and alternatives."
+      },
+      "links": [
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/taiyoukou.html",
+          "label": {
+            "ja": "区公式：受付・設備・金額",
+            "en": "Official program guidance"
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/documents/4561/0805riyounotebiki3.pdf",
+          "label": {
+            "ja": "2026年度手引き：対象者・書類・設置後申請",
+            "en": "Additional official reference"
+          },
+          "verified": true
+        }
+      ],
+      "assessment": {
+        "nationality": {
+          "state": "S",
+          "value": null,
+          "source": "https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/taiyoukou.html"
+        },
+        "residenceStatus": {
+          "state": "S",
+          "value": null,
+          "source": "https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/taiyoukou.html"
+        },
+        "officialEnglish": {
+          "state": "U",
+          "value": null
+        },
+        "applicationLanguage": {
+          "state": "U",
+          "value": null
+        },
+        "myNumberCard": {
+          "state": "U",
+          "value": null
+        },
+        "income": {
+          "state": "S",
+          "value": null,
+          "source": "https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/taiyoukou.html"
+        },
+        "ageReference": {
+          "state": "S",
+          "value": null
+        }
+      },
+      "sourceSheetRows": [
+        {
+          "key": "stable ID / 掲載",
+          "value": "meguro-home-energy-equipment / 採用"
+        },
+        {
+          "key": "英語表示名",
+          "value": "Meguro Home Energy Equipment Grant（説明訳）"
+        },
+        {
+          "key": "実施主体／窓口",
+          "value": "K 目黒区／環境課地球環境係"
+        },
+        {
+          "key": "地域／カテゴリー",
+          "value": "K 目黒区の個人住宅向け対象設備に限定／住宅・省エネ"
+        },
+        {
+          "key": "状態・開始・終了",
+          "value": "K 受付中（予算残は保証しない）。2026-06-01～2027-01-29必着。締切時刻U"
+        },
+        {
+          "key": "対象行為期間",
+          "value": "K 設置・引渡完了2026-01-01～2026-12-31。購入日だけで判定しない。申請は設置後、書類一式提出"
+        },
+        {
+          "key": "支援・額",
+          "value": "K 太陽光3万円/kW・上限15万円、蓄電池本体1/3以内・上限7万円、燃料電池7万円、対象給湯器5万円。詳細丸め・併用は計算しない"
+        },
+        {
+          "key": "年齢／基準日",
+          "value": "S 年齢制限記載なし／独立基準日S"
+        },
+        {
+          "key": "住民登録",
+          "value": "K 設置した住宅に自ら居住し住民登録。転居後は登録を終えて申請"
+        },
+        {
+          "key": "所得／世帯",
+          "value": "K 前年度住民税滞納なし。所得制限S。同一世帯の同設備助成履歴も確認"
+        },
+        {
+          "key": "その他必須／除外",
+          "value": "K 新品・自己負担、機器要件、既受給・エコ住宅助成との制限、助成総額と設置費の上限。リース除外。管理組合・共用LED・エコ住宅枠は第一版範囲外"
+        },
+        {
+          "key": "カード／代替",
+          "value": "U カード必須かの明示は未確認。K 紙提出を希望する場合の手引き案内あり"
+        },
+        {
+          "key": "申請・書類",
+          "value": "K オンライン、紙希望は窓口確認。申請・口座、領収内訳、仕様・保証等の設備別資料、住宅所有者が異なる場合の同意等"
+        },
+        {
+          "key": "機械条件",
+          "value": "registered_region=meguroかつequipment_region=meguro→match。equipment_region=outside_meguro→当該設備のmismatch。不明→unknown。賃貸だけで除外しない"
+        },
+        {
+          "key": "人間確認・注意",
+          "value": "設置引渡日、税滞納・助成歴・機器・住宅同意・併用。K 予算到達で早期終了。国籍S、在留S"
+        },
+        {
+          "key": "原典",
+          "value": "[区公式：受付・設備・金額](https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/taiyoukou.html)／[2026年度手引き：対象者・書類・設置後申請](https://www.city.meguro.tokyo.jp/documents/4561/0805riyounotebiki3.pdf)"
+        }
+      ],
+      "rulesVersion": "2026-09-13",
+      "manualReviewRequired": true
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="東京都・目黒区の生活支援を探す、日英対応の個人運営・非公式ガイド。Find support programs in Tokyo and Meguro.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'">
+<meta name="referrer" content="no-referrer">
+<title>生活支援ナビ | Tokyo Support Finder</title>
+<link rel="stylesheet" href="./styles.css">
+<script type="module" src="./src/app.js"></script>
+</head>
+<body>
+<a href="#results" class="skip" id="skip">制度一覧へ</a>
+<header class="masthead"><a class="brand" href="./index.html"><span class="brand-icon" aria-hidden="true">＋</span><span>生活支援ナビ<small>Tokyo Support Finder</small></span></a><div class="language" aria-label="Language"><button type="button" data-lang="ja" aria-pressed="true">日本語</button><button type="button" data-lang="en" aria-pressed="false">English</button></div></header>
+<main>
+<section class="hero"><div><p class="eyebrow" id="eyebrow">暮らしを支える制度の入口</p><h1 id="hero-title">使えそうな支援を、<br>見つける。</h1><p id="intro">答えられる条件だけで、東京都・目黒区の制度を探せます。</p><p class="scope" id="scope">東京都・目黒区／個人運営の非公式ガイド</p><p class="scope-en">Tokyo and Meguro / An independent, unofficial guide</p></div><aside class="hero-note"><span class="note-number">10</span><span id="hero-count">の支援制度</span><p id="hero-note">受給を決める診断ではありません。気になる制度は、公式窓口で条件を確認しましょう。</p></aside></section>
+<div class="workspace">
+<aside class="filters" aria-labelledby="filter-title"><div class="filter-heading"><h2 id="filter-title">あなたの条件</h2><button type="button" id="reset">リセット</button></div><p class="muted" id="optional-note">すべて任意。入力は保存されません。</p><form id="filters" autocomplete="off"><div id="base-inputs"></div><details id="foreign-options"><summary id="foreign-title">外国人向け条件も確認する</summary><div id="foreign-inputs"></div></details></form><p class="filter-foot" id="filter-foot">わからない項目は空欄のままで大丈夫です。</p></aside>
+<section class="results" id="results" tabindex="-1" aria-labelledby="results-title"><div class="result-heading"><div><p class="eyebrow" id="results-kicker">支援の候補を見つける</p><h2 id="results-title">制度一覧</h2></div><span id="result-count" role="status" aria-live="polite"></span></div><p class="notice" id="results-note">不明な条件があっても制度は表示します。最終判断は公式窓口でご確認ください。</p><div id="cards" class="cards"></div><p id="load-status" role="alert">制度を読み込んでいます…</p></section>
+</div>
+</main>
+<footer><div class="footer-brand">生活支援ナビ <span>Tokyo Support Finder</span></div><nav aria-label="Site information"><button data-page="about">このサイトについて</button><button data-page="privacy">Privacy Policy</button><button data-page="disclaimer">免責事項</button><button data-page="corrections">掲載情報の訂正</button></nav><p id="footer-note">制度の情報は変わることがあります。申請書類や個人情報をこのサイトへ送らないでください。</p></footer>
+<dialog id="detail"><div class="dialog-top"><span id="dialog-kicker"></span><button type="button" id="close-dialog" aria-label="閉じる">×</button></div><div id="dialog-body"></div></dialog>
+<noscript>このサイトの条件検索にはJavaScriptが必要です。入力はブラウザ内だけで処理します。JavaScript is needed for this browser-only tool.</noscript>
+</body></html>
