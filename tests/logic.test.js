@@ -55,8 +55,9 @@ test('Tokyo App opens only at stated 13:00, and closes after final day',()=>{
  assert.equal(p.events.find(e=>e.type==='points_expiry').date,null);
 });
 test('next review day inclusive, following day stale',()=>{
- assert.equal(availability(programs[0],'2026-09-20T23:59:59+09:00'),'open');
- assert.equal(availability(programs[0],'2026-09-21T00:00:00+09:00'),'stale');
+ const p={...programs[0],nextReview:'2026-09-20'};
+ assert.equal(availability(p,'2026-09-20T23:59:59+09:00'),'open');
+ assert.equal(availability(p,'2026-09-21T00:00:00+09:00'),'stale');
 });
 test('stale information takes priority over last-day unknown time',()=>assert.equal(availability(programs[0],'2027-04-01T00:00:00+09:00'),'stale'));
 test('installation end does not close applications',()=>{
