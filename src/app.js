@@ -1,4 +1,4 @@
-import {evaluate,availability,listed,safeOfficialURL} from './logic.js';
+import {evaluate,availability,programsForRegion,safeOfficialURL} from './logic.js';
 import {words,policies,correctionFormURL} from './ui-text.js';
 let lang='ja',programs=[],inputs={},extraInputs=new Map(),active=null;
 const $=id=>document.getElementById(id), t=()=>words[lang], local=v=>v?.[lang]??'';
@@ -41,8 +41,10 @@ function feedback(p,into){
  into.append(badge,el('p',r.candidate?t().candidate:t().reasons[r.reason],'match-note'));
 }
 function renderCards(){
- const list=listed(programs).slice().sort((a,b)=>Number(b.category===inputs.interests)-Number(a.category===inputs.interests));
+ const list=programsForRegion(programs,inputs.region).slice().sort((a,b)=>Number(b.category===inputs.interests)-Number(a.category===inputs.interests));
  $('cards').replaceChildren();$('result-count').textContent=t().resultCount(list.length);
+ $('results-note').textContent=inputs.region==='outside_tokyo'?t().outsideCoverage:t().resultNote;
+ if(!list.length){$('cards').append(el('p',t().outsideCoverage,'notice'));return;}
  for(const p of list){
   const card=el('article',undefined,'card');card.dataset.program=p.id;
   const head=el('div',undefined,'card-head'),state=availability(p);

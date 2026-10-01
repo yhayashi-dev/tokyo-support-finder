@@ -30,6 +30,8 @@ try{
  page.on('response',r=>{if(r.status()>=400)bad.push(r.url());});
  await page.goto(base);await page.locator('.card').first().waitFor();
  assert.equal(await page.locator('.card').count(),10);pass('empty input: ten published programs');
+ assert.deepEqual(await page.locator('#base-region option').evaluateAll(nodes=>nodes.map(n=>n.value)),['unknown','meguro','other_tokyo','outside_tokyo']);
+ assert.ok(!(await page.locator('body').innerText()).includes('中野区'));
  assert.equal(await page.locator('[data-program="tokyo-app-living-support"] .amount').innerText(),'11,000ポイント');
  assert.ok(!(await page.locator('body').innerText()).includes('NaN'));pass('Tokyo point card renders the exact numeric amount');
  for(const id of ['tokyo-marusho','meguro-housing-security-rent','meguro-food-support-closed'])assert.equal(await page.locator('[data-program="'+id+'"]').count(),0);
@@ -44,6 +46,15 @@ try{
  }
  pass('all ten Japanese details and '+links+' official links');
  const initialRequests=requests.length;
+ await page.locator('#base-region').selectOption('meguro');
+ assert.equal(await page.locator('.card').count(),10,'Meguro includes published Tokyo-wide and Meguro programs');
+ assert.equal(await page.locator('.card[data-program^="nakano-"]').count(),0);
+ await page.locator('#base-region').selectOption('other_tokyo');
+ assert.equal(await page.locator('.card').count(),3,'other Tokyo shows only Tokyo-wide programs');
+ assert.equal(await page.locator('.card[data-program^="meguro-"]').count(),0);
+ await page.locator('#base-region').selectOption('outside_tokyo');
+ assert.equal(await page.locator('.card').count(),0,'outside supported area has no program cards');
+ assert.match(await page.locator('#results-note').innerText(),/東京都・目黒区/);
  await page.locator('#base-region').selectOption('meguro');
  await page.locator('#base-adult_age').fill('52');
  await page.locator('#base-interests').selectOption('energy');
@@ -89,7 +100,7 @@ try{
  await page.reload();await page.locator('.card').first().waitFor();
  assert.equal(await page.locator('#base-region').inputValue(),'unknown');assert.equal(await page.locator('#base-adult_age').inputValue(),'');
  pass('reload clears user conditions');
- for(const width of [375,768,1280])for(const lang of ['ja','en']){
+ for(const width of [390,768,1280,1365])for(const lang of ['ja','en']){
   await page.setViewportSize({width,height:900});await page.locator('[data-lang="'+lang+'"]').click();
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),width+' '+lang+' overflow');
   assert.ok(await page.locator('.card').first().isVisible());
@@ -99,7 +110,7 @@ try{
   await page.screenshot({path:out+'/'+width+'-'+lang+'-detail.png',animations:'disabled'});
   await page.keyboard.press('Escape');
  }
- pass('375 / 768 / 1280 widths in both languages, no horizontal overflow');
+ pass('390 / 768 / 1280 / 1365 widths in both languages, no horizontal overflow');
  await page.locator('[data-page="privacy"]').focus();await page.keyboard.press('Enter');
  assert.equal(await page.locator('dialog[open]').count(),1);await page.keyboard.press('Escape');
  assert.equal(await page.locator('[data-page="privacy"]').evaluate(e=>e===document.activeElement),true);

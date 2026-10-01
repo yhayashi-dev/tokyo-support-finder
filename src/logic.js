@@ -56,6 +56,14 @@ export function availability(p,asOf=new Date()){
  return p.status; // A planned record never opens itself solely because time has passed.
 }
 export function listed(programs){return programs.filter(p=>p.publication==='published'&&p.status!=='closed');}
+export function programsForRegion(programs,region=UNKNOWN){
+ const published=listed(programs);
+ if(region==='unknown'||region==null||region==='')return published;
+ if(region==='meguro')return published.filter(p=>p.region==='tokyo'||p.region==='meguro');
+ if(region==='other_tokyo')return published.filter(p=>p.region==='tokyo');
+ if(region==='outside_tokyo')return [];
+ return [];
+}
 export function safeOfficialURL(url){
  try {const u=new URL(url);return u.protocol==='https:'&&!u.username&&!u.password&&(['www.city.meguro.tokyo.jp','www.tokyoapp.metro.tokyo.lg.jp','018support.metro.tokyo.lg.jp','www.tokyo-co2down.jp','www.tz-points.jp','www.fukushi.metro.tokyo.lg.jp'].includes(u.hostname))?u.href:null;}catch{return null;}
 }

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {evaluate,availability,listed,safeOfficialURL,jstDay} from '../src/logic.js';
+import {evaluate,availability,listed,programsForRegion,safeOfficialURL,jstDay} from '../src/logic.js';
 const {programs}=JSON.parse(readFileSync(new URL('../data/programs.json',import.meta.url)));
 const cases=JSON.parse(readFileSync(new URL('./cases.json',import.meta.url)));
 const find=id=>programs.find(p=>p.id===id);
@@ -11,6 +11,15 @@ for(const c of cases)test(c.caseId+' '+c.programId,()=>{
  assert.equal(r.candidate,c.expected==='match');assert.equal(r.manualReview,true);
 });
 test('empty input keeps all ten programs reviewable',()=>{assert.equal(listed(programs).length,10);for(const p of listed(programs))assert.equal(evaluate(p).basic,'unknown');});
+test('regional filtering uses only currently published records and preserves Tokyo-wide programs',()=>{
+ assert.equal(programsForRegion(programs,'unknown').length,10);
+ assert.equal(programsForRegion(programs,'meguro').length,10);
+ assert.equal(programsForRegion(programs,'other_tokyo').length,3);
+ assert.deepEqual(programsForRegion(programs,'other_tokyo').map(p=>p.region),['tokyo','tokyo','tokyo']);
+ assert.deepEqual(programsForRegion(programs,'outside_tokyo'),[]);
+ assert.deepEqual(programsForRegion(programs,'unsupported'),[]);
+ assert.equal(programsForRegion([...programs,{...programs[0],id:'nakano-test',region:'nakano'}],'meguro').some(p=>p.region==='nakano'),false);
+});
 test('held and ended data never appear in normal listing',()=>{
  const ended=JSON.parse(readFileSync(new URL('../data/ended-reference.json',import.meta.url)));
  assert.equal(programs.filter(p=>p.publication==='held').length,2);
