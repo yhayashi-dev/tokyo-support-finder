@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="東京都・目黒区の生活支援を探す、日英対応の個人運営・非公式ガイド。Find support programs in Tokyo and Meguro.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self'; img-src 'self' data: https://www.google-analytics.com https://region1.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'">
 <meta name="referrer" content="no-referrer">
 <link rel="canonical" href="https://yhayashi-dev.github.io/tokyo-support-finder/">
 <meta name="robots" content="index,follow">
@@ -15,6 +15,9 @@
 <title>生活支援ナビ | Tokyo Support Finder</title>
 <link rel="stylesheet" href="./styles.css">
 <script type="module" src="./src/app.js"></script>
+
+<script defer src="/tokyo-support-finder/analytics-config.js"></script>
+<script defer src="/tokyo-support-finder/analytics.js"></script>
 </head>
 <body>
 <a href="#results" class="skip" id="skip">制度一覧へ</a>
